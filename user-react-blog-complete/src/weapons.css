@@ -1,0 +1,32 @@
+.weapons, .armor {
+  display: inline-block;
+  border: black 1px solid;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.weapon-list, .weapon-form, .armor-list, .armor-form {
+  display: inline-block;
+  border: blue 1px solid;
+  border-radius: 10px;
+  margin: 5px;
+  padding: 10px;
+}
+
+.weapon-form label, .armor-form label {
+  display: inline-block;
+  width: 125px;
+  margin-right: 5px;
+}
+
+.weapon-form input, .armor-form input {
+  width: 150px;
+  margin-right: 5px;
+}
+
+.errorMessage {
+  border-radius: 10px;
+  border: red 1px solid;
+  margin: 5px;
+  padding: 10px;
+}
