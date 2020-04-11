@@ -19,7 +19,7 @@ export default function Weapons () {
 
   const [formMode, setFormMode] = React.useState('new')
 
-  const emptyWeapon = { armorType: '', armorName: '', protection: '' }
+  const emptyWeapon = { weaponType: '', weaponName: '', damage: '' }
   const [currentWeapon, setCurrentWeapon] = React.useState(emptyWeapon)
 
   // Note:  The {} around API.fetchWeapons are important so that the block

@@ -3,13 +3,13 @@ import PropTypes from 'prop-types'
 
 WeaponForm.propTypes = {
   weapon: PropTypes.object.isRequired,
-  updateWeapon: PropTypes.func.isRequired,
+  update: PropTypes.func.isRequired,
   formMode: PropTypes.string.isRequired,
   submitCallback: PropTypes.func.isRequired,
   cancelCallback: PropTypes.func.isRequired
 };
 
-export default function WeaponForm ({ weapon, updateWeapon, formMode, submitCallback, cancelCallback }) {
+export default function WeaponForm ({ weapon, update, formMode, submitCallback, cancelCallback }) {
   const cancelClicked = (event) => {
     event.preventDefault()
     cancelCallback()
@@ -38,7 +38,7 @@ export default function WeaponForm ({ weapon, updateWeapon, formMode, submitCall
 
   const formSubmitted = (event) => {
     // Prevent the browser from re-loading the page.
-    event.preventDefault()
+    event.preventDefault();
     submitCallback()
   }
 
@@ -49,17 +49,17 @@ export default function WeaponForm ({ weapon, updateWeapon, formMode, submitCall
         <div className="form-group">
           <label>Weapon Type</label>
           <input type="text" className="form-control" autoComplete='given type' name="weaponType" id="weaponType"
-                 placeholder="Weapon Type" value={weapon.armorType} onChange={(event) => updateWeapon('armorType', event.target.value)} />
+                 placeholder="ex: Two-handed" value={weapon.weaponType} onChange={(event) => update('weaponType', event.target.value)} />
         </div>
         <div className="form-group">
           <label htmlFor="weaponName">Weapon Name</label>
           <input type="text" className="form-control" autoComplete='given name' name="weaponName" id="weaponName"
-                 placeholder="Last Name" value={weapon.armorName} onChange={(event) => updateWeapon('armorName', event.target.value)} />
+                 placeholder="Name of weapon" value={weapon.weaponName} onChange={(event) => update('weaponName', event.target.value)} />
         </div>
         <div className="form-group">
           <label htmlFor="damage">Damage</label>
           <input type="number" className="form-control" autoComplete='damage' name="damage" id="damage"
-                 placeholder="10" value={weapon.protection} onChange={(event) => updateWeapon('protection', event.target.value)} />
+                 placeholder="ex: 10" value={weapon.damage} onChange={(event) => update('protection', event.target.value)} />
         </div>
         {renderButtons()}
       </form>

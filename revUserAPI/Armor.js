@@ -29,6 +29,6 @@ module.exports = class Armor {
   }
 
   static isUnique(armor, allArmor) {
-    return allArmor.filter((currArmor) => currArmor.armorName === armor.armorName && curArmor.id !== armor.id).length === 0;
+    return allArmor.filter((currArmor) => currArmor.armorName === armor.armorName && currArmor.id !== armor.id).length === 0;
   }
 };

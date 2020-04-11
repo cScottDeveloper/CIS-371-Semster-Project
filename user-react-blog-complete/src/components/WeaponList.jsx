@@ -5,9 +5,9 @@ function WeaponListItem ({ weapon, onEditClicked, onDeleteClicked }) {
   // Notice that the buttons currently don't do anything when clicked.
   return (
     <tr>
-      <td className="col-md-1">{weapon.armorType}</td>
-      <td className="col-md-1">{weapon.armorName}</td>
-      <td className="col-md-1">{weapon.protection}</td>
+      <td className="col-md-1">{weapon.weaponType}</td>
+      <td className="col-md-1">{weapon.weaponName}</td>
+      <td className="col-md-1">{weapon.damage}</td>
       <td className="col-md-1 btn-toolbar">
         <button className="btn btn-success btn-sm" onClick={event => onEditClicked(weapon)}>
           <i className="glyphicon glyphicon-pencil"></i> Edit

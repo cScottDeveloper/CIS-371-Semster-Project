@@ -15,8 +15,8 @@ const armorController = new ArmorController();
 const bodyParser = require('body-parser');
 
 /* Instantiate a server object listening on port 3001*/
-const app = express()
-const port = 3001
+const app = express();
+const port = 3001;
 
 /* Parse the request body if there is POST data */
 /* IMPORTANT! Notice that this is different from the expressMVC example:
@@ -39,7 +39,7 @@ let makeCrudRoutes = (name, controller) => {
         makeRoute('get', `/${name}`, 'index'),
         makeRoute('post', `/${name}`, 'create'),
         makeRoute('get', `/${name}/:id`, 'show'),
-        makeRoute('put', `/${name}/:id`, 'updateArmor'),
+        makeRoute('put', `/${name}/:id`, 'update'),
         makeRoute('delete', `/${name}/:id`, 'delete')
     ];
 

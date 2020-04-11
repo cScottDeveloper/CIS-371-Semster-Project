@@ -19,7 +19,7 @@ class WeaponController {
     }
 
     async create(req, res) {
-        console.log("About to createWeapon weapon");
+        console.log("About to create weapon");
         console.log(req.body);
 
         let newWeapon = req.body;

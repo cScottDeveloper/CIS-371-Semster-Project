@@ -1,5 +1,5 @@
 const DSDB = require('./DSDB');
-const Armor = require('./Armor')
+const Armor = require('./Armor');
 
 class ArmorController {
 
@@ -26,7 +26,7 @@ class ArmorController {
 
         // Needs to be a valid not duplicate entry, if duplicate, send 422
         if (Armor.isValid(newArmor, await DSDB.allArmor())) {
-            // The 'data' contains the id (primary key) of newly created weapon
+            // The 'data' contains the id (primary key) of newly created armor
             DSDB.createArmor(newArmor).then(data => res.send(data));
         } else {
             // Send a 422 response.
@@ -35,7 +35,7 @@ class ArmorController {
         }
     }
 
-    async updateArmor(req, res) {
+    async update(req, res) {
         let newArmor = req.body;
         console.log("Proposed updateArmor: ");
         console.log(newArmor);
@@ -60,7 +60,7 @@ class ArmorController {
         }
     }
 
-    async deleteArmor(req, res) {
+    async delete(req, res) {
         let id = req.params.id;
         let armor = await DSDB.findArmor(id);
         if (!armor) {

@@ -21,7 +21,7 @@ class DSDB {
 
     static allWeapons() {
         return new Promise((resolve, reject) => {
-            this.db.allWeapons('SELECT * FROM Armor', (err, rows) => {
+            this.db.all('SELECT * FROM Weapons', (err, rows) => {
                 resolve(rows);
             });
         });
@@ -29,7 +29,7 @@ class DSDB {
 
     static allArmor() {
         return new Promise((resolve, reject) => {
-            this.db.allArmor('SELECT * FROM Armor', (err, rows) => {
+            this.db.all('SELECT * FROM Armor', (err, rows) => {
                 resolve(rows);
             });
         });
@@ -37,7 +37,7 @@ class DSDB {
 
     static findWeapons(id) {
         return new Promise((resolve, reject) => {
-            this.db.allWeapons(`SELECT * FROM Weapons WHERE (id == ${id})`, (err, rows) => {
+            this.db.all(`SELECT * FROM Weapons WHERE (id == ${id})`, (err, rows) => {
                 if (rows.length >= 1) {
                     console.log("resolving");
                     resolve(rows[0]);
@@ -51,7 +51,7 @@ class DSDB {
 
     static findArmor(id) {
         return new Promise((resolve, reject) => {
-            this.db.allWeapons(`SELECT * FROM Armor WHERE (id == ${id})`, (err, rows) => {
+            this.db.all(`SELECT * FROM Armor WHERE (id == ${id})`, (err, rows) => {
                 if (rows.length >= 1) {
                     console.log("resolving");
                     resolve(rows[0]);
@@ -64,7 +64,7 @@ class DSDB {
     }
 
     static createWeapon(weapon) {
-        let sql = `INSERT INTO Weapons (weaponType, weaponName, damage) VALUES ("${weapon.armorType}", "${weapon.armorName}", "${weapon.protection}");`;
+        let sql = `INSERT INTO Weapons (weaponType, weaponName, damage) VALUES ("${weapon.weaponType}", "${weapon.weaponName}", "${weapon.damage}");`;
         return new Promise((resolve, reject) => {
             console.log('The sql: ');
             console.log(sql);
@@ -104,7 +104,7 @@ class DSDB {
     }
 
     static updateWeapon(weapon) {
-        let sql = `UPDATE Weapons SET weaponType="${weapon.armorType}", weaponName="${weapon.armorName}", damage="${weapon.protection}" WHERE id="${weapon.id}"`;
+        let sql = `UPDATE Weapons SET weaponType="${weapon.weaponType}", weaponName="${weapon.weaponName}", damage="${weapon.damage}" WHERE id="${weapon.id}"`;
         return new Promise((resolve, reject) => {
             this.db.run(sql, function (err, rows) {
                 if (err) {

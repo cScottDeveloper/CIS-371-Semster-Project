@@ -4,16 +4,16 @@ module.exports = class Weapon {
 
     let errors = [];
 
-    if (!weapon.armorType) {
+    if (!weapon.weaponType) {
       errors.push("Every weapon must have a type.");
     }
 
-    if (!weapon.armorName) {
+    if (!weapon.weaponName) {
       errors.push("Every weapon must have a name.");
     }
 
-    if (!weapon.protection) {
-      errors.push("Every weapon must have an amount of protection");
+    if (!weapon.damage) {
+      errors.push("Every weapon must have an amount of damage");
     }
 
    if (!Weapon.isUnique(weapon, allWeapons)) {
@@ -29,6 +29,6 @@ module.exports = class Weapon {
   }
 
   static isUnique(weapon, allWeapons) {
-    return allWeapons.filter((currWeapon) => currWeapon.armorName === weapon.armorName && currWeapon.id !== weapon.id).length === 0;
+    return allWeapons.filter((currWeapon) => currWeapon.weaponName === weapon.weaponName && currWeapon.id !== weapon.id).length === 0;
   }
 }
