@@ -101,7 +101,7 @@ export default class API {
     })
   }//end of post armor
 
-  static updateWeapon (weapon) {
+  static updateWeapon(weapon) {
     const options = {
       method: 'PUT',
       headers: {Accept: 'application/json', 'Content-Type': 'application/json;charset=UTF-8'},

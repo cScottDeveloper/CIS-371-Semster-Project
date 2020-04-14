@@ -3,12 +3,14 @@ import ReactDOM from 'react-dom'
 import './index.css'
 import './forms.css'
 import Weapons from './components/Weapons'
+import Armor from './components/Armor'
 import * as serviceWorker from './serviceWorker'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 ReactDOM.render(
   <React.StrictMode>
     <Weapons />
+    <Armor/>
   </React.StrictMode>,
   document.getElementById('root')
 )

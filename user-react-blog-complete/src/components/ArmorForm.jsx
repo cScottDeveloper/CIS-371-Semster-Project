@@ -49,17 +49,17 @@ export default function ArmorForm ({ armor, updateArmor, formMode, submitCallbac
         <div className="form-group">
           <label>Armor Type</label>
           <input type="text" className="form-control" name="armorType" id="armorType"
-                 placeholder="Armor Type" value={armor.armorType} onChange={(event) => updateArmor('armorType', event.target.value)} />
+                 placeholder="Armor Type" value={armor.armorType} onChange={(event) => updateArmor('armorType', event.target.value.toUpperCase())} />
         </div>
         <div className="form-group">
           <label htmlFor="armorName">Armor Name</label>
           <input type="text" className="form-control" name="armorName" id="armorName"
-                 placeholder="Armor Name" value={armor.armorName} onChange={(event) => updateArmor('armorName', event.target.value)} />
+                 placeholder="Armor Name" value={armor.armorName} onChange={(event) => updateArmor('armorName', event.target.value.toUpperCase())} />
         </div>
         <div className="form-group">
           <label htmlFor="protection">Protection</label>
           <input type="number" className="form-control" id="protection"
-                 placeholder="255" value={armor.protection} onChange={(event) => updateArmor('protection', event.target.value)} />
+                 placeholder="255" value={armor.protection}  onChange={(event) => updateArmor('protection', event.target.value)} />
         </div>
         {renderButtons()}
       </form>

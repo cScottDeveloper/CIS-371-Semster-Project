@@ -65,7 +65,7 @@ export default function Weapons () {
 
   const editClicked = (weapon) => {
     setErrorMessage(null);
-    setFormMode('updateArmor');
+    setFormMode('updateWeapon');
     setCurrentWeapon(weapon)
   };
 
@@ -87,7 +87,7 @@ export default function Weapons () {
   return (
     <div className="weapons">
       {errorBlock}
-      <WeaponForm formMode={formMode} weapon={currentWeapon} update={updateWeapon}
+      <WeaponForm formMode={formMode} weapon={currentWeapon} updateWeapon={updateWeapon}
                   submitCallback={formSubmitted} cancelCallback={cancelClicked} />
       <div />
       {loadingMessage

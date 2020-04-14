@@ -3,13 +3,13 @@ import PropTypes from 'prop-types'
 
 WeaponForm.propTypes = {
   weapon: PropTypes.object.isRequired,
-  update: PropTypes.func.isRequired,
+  updateWeapon: PropTypes.func.isRequired,
   formMode: PropTypes.string.isRequired,
   submitCallback: PropTypes.func.isRequired,
   cancelCallback: PropTypes.func.isRequired
 };
 
-export default function WeaponForm ({ weapon, update, formMode, submitCallback, cancelCallback }) {
+export default function WeaponForm ({ weapon, updateWeapon, formMode, submitCallback, cancelCallback }) {
   const cancelClicked = (event) => {
     event.preventDefault()
     cancelCallback()
@@ -49,17 +49,17 @@ export default function WeaponForm ({ weapon, update, formMode, submitCallback, 
         <div className="form-group">
           <label>Weapon Type</label>
           <input type="text" className="form-control" name="weaponType" id="weaponType"
-                 placeholder="Two-handed" value={weapon.weaponType} onChange={(event) => update('weaponType', event.target.value)} />
+                 placeholder="Two-handed" value={weapon.weaponType} onChange={(event) => updateWeapon('weaponType', event.target.value.toUpperCase())} />
         </div>
         <div className="form-group">
           <label htmlFor="weaponName">Weapon Name</label>
           <input type="text" className="form-control" name="weaponName" id="weaponName"
-                 placeholder="Name of weapon" value={weapon.weaponName} onChange={(event) => update('weaponName', event.target.value)} />
+                 placeholder="Name of weapon" value={weapon.weaponName} onChange={(event) => updateWeapon('weaponName', event.target.value.toUpperCase())} />
         </div>
         <div className="form-group">
           <label htmlFor="damage">Damage</label>
-          <input type="number" className="form-control" name="damage" id="damage"
-                  value={weapon.damage} onChange={(event) => update('protection', event.target.value)} />
+          <input type="number" className="form-control" id="damage"
+                 placeholder="15" value={weapon.damage}  onChange={(event) => updateWeapon('damage', event.target.value)} />
         </div>
         {renderButtons()}
       </form>
