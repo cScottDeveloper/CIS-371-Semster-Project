@@ -57,7 +57,7 @@ let makeCrudRoutes = (name, controller) => {
         });
     });
 };
-//This one line makes allWeapons the routes for the weapons
+//This one line makes the routes for the weapons, armor, ...
 makeCrudRoutes('weapons', weaponController);
 makeCrudRoutes('armor', armorController);
 

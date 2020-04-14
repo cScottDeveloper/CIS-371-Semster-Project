@@ -7,11 +7,14 @@
 
 .weapon-list, .weapon-form, .armor-list, .armor-form {
   display: inline-block;
-  border: blue 1px solid;
+  border: grey 2px inset;
   border-radius: 10px;
   margin: 5px;
   padding: 10px;
+  background-color: lightgrey;
 }
+
+
 
 .weapon-form label, .armor-form label {
   display: inline-block;

@@ -1,0 +1,29 @@
+.container{
+    border: solid black 2px;
+}
+
+.welcome-info{
+    font-size: 15px;
+}
+
+.container-fluid{
+    border: grey 10px outset;
+    margin: 5px;
+}
+.col-md-1, .col-lg-1{
+    border: black solid 2px;
+    text-align: center;
+    margin: 5px;
+}
+
+.info-button{
+    background: #282c34;
+    color: white;
+    margin: 5px;
+}
+#titleInfo, .welcome-info{
+    text-align: center;
+}
+#titleInfo{
+    margin: 10px;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="bootStyle.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="buttonsAction.js"></script>
+    <title>Semester project</title>
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row" id="titleInfo"><div class="display-2"><kbd>Dark Souls 3 Info &#129497	</kbd></div></div>
+    <div class="row">
+    <div class="welcome-info">
+            <div class="welcome-info">
+                <h2>Welcome to the dark souls 3 information page where you can find information about your favorite
+                    in game items and locations!</h2>
+            </div>
+    </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <button class="info-button" type="button" onclick=loadWeapons()>Weapons</button>
+            <p id="demo"></p>
+        </div>
+        <div class="col-md-4">
+            <button class="info-button" type="button" onclick=loadArmor()>Armor</button>
+        </div>
+        <div class="col-md-4">
+            <button class="info-button" type="button" onclick="alert('Trinket button not set up')">Locations</button>
+        </div>
+    </div>
+</div>
+</body>
+</html>

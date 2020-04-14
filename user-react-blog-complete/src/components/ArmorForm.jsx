@@ -21,7 +21,7 @@ export default function ArmorForm ({ armor, updateArmor, formMode, submitCallbac
   const renderButtons = () => {
     if (formMode === 'new') {
       return (
-        <button type="submit" className="btn btn-primary">Create</button>
+        <button type="submit" className="btn btn-primary">Forge</button>
       )
     } else {
       return (
@@ -48,17 +48,17 @@ export default function ArmorForm ({ armor, updateArmor, formMode, submitCallbac
       <form onSubmit={formSubmitted}>
         <div className="form-group">
           <label>Armor Type</label>
-          <input type="text" className="form-control" autoComplete='given type' name="armorType" id="armorType"
+          <input type="text" className="form-control" name="armorType" id="armorType"
                  placeholder="Armor Type" value={armor.armorType} onChange={(event) => updateArmor('armorType', event.target.value)} />
         </div>
         <div className="form-group">
           <label htmlFor="armorName">Armor Name</label>
-          <input type="text" className="form-control" autoComplete='given name' name="armorName" id="armorName"
+          <input type="text" className="form-control" name="armorName" id="armorName"
                  placeholder="Armor Name" value={armor.armorName} onChange={(event) => updateArmor('armorName', event.target.value)} />
         </div>
         <div className="form-group">
           <label htmlFor="protection">Protection</label>
-          <input type="number" className="form-control" autoComplete='protection' name="protection" id="protection"
+          <input type="number" className="form-control" id="protection"
                  placeholder="255" value={armor.protection} onChange={(event) => updateArmor('protection', event.target.value)} />
         </div>
         {renderButtons()}

@@ -48,18 +48,18 @@ export default function WeaponForm ({ weapon, update, formMode, submitCallback, 
       <form onSubmit={formSubmitted}>
         <div className="form-group">
           <label>Weapon Type</label>
-          <input type="text" className="form-control" autoComplete='given type' name="weaponType" id="weaponType"
-                 placeholder="ex: Two-handed" value={weapon.weaponType} onChange={(event) => update('weaponType', event.target.value)} />
+          <input type="text" className="form-control" name="weaponType" id="weaponType"
+                 placeholder="Two-handed" value={weapon.weaponType} onChange={(event) => update('weaponType', event.target.value)} />
         </div>
         <div className="form-group">
           <label htmlFor="weaponName">Weapon Name</label>
-          <input type="text" className="form-control" autoComplete='given name' name="weaponName" id="weaponName"
+          <input type="text" className="form-control" name="weaponName" id="weaponName"
                  placeholder="Name of weapon" value={weapon.weaponName} onChange={(event) => update('weaponName', event.target.value)} />
         </div>
         <div className="form-group">
           <label htmlFor="damage">Damage</label>
-          <input type="number" className="form-control" autoComplete='damage' name="damage" id="damage"
-                 placeholder="ex: 10" value={weapon.damage} onChange={(event) => update('protection', event.target.value)} />
+          <input type="number" className="form-control" name="damage" id="damage"
+                  value={weapon.damage} onChange={(event) => update('protection', event.target.value)} />
         </div>
         {renderButtons()}
       </form>

@@ -87,7 +87,7 @@ export default function Weapons () {
   return (
     <div className="weapons">
       {errorBlock}
-      <WeaponForm formMode={formMode} weapon={currentWeapon} updateWeapon={updateWeapon}
+      <WeaponForm formMode={formMode} weapon={currentWeapon} update={updateWeapon}
                   submitCallback={formSubmitted} cancelCallback={cancelClicked} />
       <div />
       {loadingMessage
