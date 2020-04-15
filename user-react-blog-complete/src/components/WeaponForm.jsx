@@ -21,7 +21,7 @@ export default function WeaponForm ({ weapon, updateWeapon, formMode, submitCall
   const renderButtons = () => {
     if (formMode === 'new') {
       return (
-        <button type="submit" className="btn btn-primary">Create</button>
+        <button type="submit" className="btn btn-primary">Forge</button>
       )
     } else {
       return (

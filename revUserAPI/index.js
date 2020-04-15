@@ -7,9 +7,11 @@ const cors = require('cors');
 
 const WeaponController = require('./WeaponController');
 const ArmorController = require('./ArmorController');
+const LocationController = require('./LocationController');
 
 const weaponController = new WeaponController();
 const armorController = new ArmorController();
+const locationController = new LocationController();
 
 /* Import the body-parser module.  (Used for parsing Post data) */
 const bodyParser = require('body-parser');
@@ -57,9 +59,10 @@ let makeCrudRoutes = (name, controller) => {
         });
     });
 };
-//This one line makes the routes for the weapons, armor, ...
+//This one line makes the routes for the weapons, armor, locations, ...
 makeCrudRoutes('weapons', weaponController);
 makeCrudRoutes('armor', armorController);
+makeCrudRoutes('locations', locationController);
 
 /* Launch the server */
 app.listen(port, () => console.log(`Dark Souls easy wiki app listening on port ${port}!`))

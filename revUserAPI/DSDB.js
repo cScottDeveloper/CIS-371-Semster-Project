@@ -6,6 +6,7 @@ class DSDB {
         this.db.serialize(() => {
             this.db.run('CREATE TABLE Weapons (id INTEGER PRIMARY KEY, weaponType TEXT NOT NULL, weaponName TEXT NOT NULL, damage TEXT NOT NULL);');
             this.db.run('CREATE TABLE Armor (id INTEGER PRIMARY KEY, armorType TEXT NOT NULL, armorName TEXT NOT NULL, protection TEXT NOT NULL);');
+            this.db.run('CREATE TABLE Locations (id INTEGER PRIMARY KEY, locationName TEXT NOT NULL, description TEXT NOT NULL);');
             this.db.run('INSERT INTO Weapons (weaponType, weaponName, damage) VALUES ("Dagger", "Parrying dagger", 12);');
             this.db.run('INSERT INTO Weapons (weaponType, weaponName, damage) VALUES ("Dagger", "Harpe",  13);');
             this.db.run('INSERT INTO Weapons (weaponType, weaponName, damage) VALUES ("Dagger", "Brigand Twin Daggers", 11);');
@@ -16,6 +17,10 @@ class DSDB {
             this.db.run('INSERT INTO Armor (armorType, armorName, protection) VALUES ("light", "Chainmail", 266);');
             this.db.run('INSERT INTO Armor (armorType, armorName, protection) VALUES ("heavy", "Golden Knight Mail", 500);');
             this.db.run('INSERT INTO Armor (armorType, armorName, protection) VALUES ("heavy", "Paladin\'s Metal", 505);');
+            this.db.run('INSERT INTO Locations (locationName, description) VALUES ("Firelink Shrine", "Firelink Shrine ' +
+                'is the player\'s first destination in Dark Souls and Dark Souls Remastered. This ancient and crumbling ' +
+                'shrine is used as a gathering hub and safe haven for many trainers, merchants and other story related characters. ' +
+                'This central bonfire will be visited often, since it is also a crossroads for many regions and shortcuts.");');
         });
     }
 
@@ -30,6 +35,14 @@ class DSDB {
     static allArmor() {
         return new Promise((resolve, reject) => {
             this.db.all('SELECT * FROM Armor', (err, rows) => {
+                resolve(rows);
+            });
+        });
+    }
+
+    static allLocations() {
+        return new Promise((resolve, reject) => {
+            this.db.all('SELECT * FROM Locations', (err, rows) => {
                 resolve(rows);
             });
         });
@@ -58,6 +71,20 @@ class DSDB {
                 } else {
                     console.log("rejecting");
                     reject(`Armor with Id ${id} not found`);
+                }
+            });
+        });
+    }
+
+    static findLocations(id) {
+        return new Promise((resolve, reject) => {
+            this.db.all(`SELECT * FROM Locations WHERE (id == ${id})`, (err, rows) => {
+                if (rows.length >= 1) {
+                    console.log("resolving");
+                    resolve(rows[0]);
+                } else {
+                    console.log("rejecting");
+                    reject(`Location with Id ${id} not found`);
                 }
             });
         });
@@ -120,6 +147,21 @@ class DSDB {
 
     static updateArmor(armor) {
         let sql = `UPDATE Armor SET armorType="${armor.armorType}", armorName="${armor.armorName}", protection="${armor.protection}" WHERE id="${armor.id}"`;
+        return new Promise((resolve, reject) => {
+            this.db.run(sql, function (err, rows) {
+                if (err) {
+                    console.log('Update Error');
+                    console.log(err);
+                    reject(err);
+                } else {
+                    resolve({ success: true });
+                }
+            });
+        });
+    }
+
+    static updateLocation(location) {
+        let sql = `UPDATE Locations SET locationName="${location.locationName}", description="${location.description}" WHERE id="${location.id}"`;
         return new Promise((resolve, reject) => {
             this.db.run(sql, function (err, rows) {
                 if (err) {

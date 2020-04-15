@@ -1,11 +1,11 @@
-.weapons, .armor {
+.weapons, .armor .locations{
   display: inline-block;
   border: black 1px solid;
   border-radius: 10px;
   margin: 10px;
 }
 
-.weapon-list, .weapon-form, .armor-list, .armor-form {
+.weapon-list, .weapon-form, .armor-list, .armor-form,.location-list, .location-form{
   display: inline-block;
   border: grey 2px inset;
   border-radius: 10px;
@@ -15,14 +15,13 @@
 }
 
 
-
-.weapon-form label, .armor-form label {
+.weapon-form label, .armor-form label, .location-form label{
   display: inline-block;
   width: 125px;
   margin-right: 5px;
 }
 
-.weapon-form input, .armor-form input {
+.weapon-form input, .armor-form input, .location-form input{
   width: 150px;
   margin-right: 5px;
 }
@@ -32,4 +31,8 @@
   border: red 1px solid;
   margin: 5px;
   padding: 10px;
+}
+
+.locationTable, .locationDescription{
+  display: inline-block;
 }

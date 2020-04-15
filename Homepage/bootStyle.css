@@ -10,7 +10,7 @@
     border: grey 10px outset;
     margin: 5px;
 }
-.col-md-1, .col-lg-1{
+.col-md-4 {
     border: black solid 2px;
     text-align: center;
     margin: 5px;
