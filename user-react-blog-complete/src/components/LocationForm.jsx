@@ -19,44 +19,45 @@ export default function LocationForm ({ location, updateLocation, formMode, subm
   // * An "Update" and "Cancel" button when updating.
   const renderButtons = () => {
     if (formMode === 'new') {
-      return (
-        <button type="submit" className="btn btn-primary">Forge</button>
-      )
+      console.log("Currently in display mode for locations");
     } else {
       return (
-        <div className="form-group">
-          <button type="submit" className="btn btn-primary">Save</button>
-          <button type="submit" className="btn btn-danger" onClick={cancelClicked}>Cancel</button>
-        </div>
+          <div className="form-group">
+            <button type="submit" className="btn btn-primary">Save</button>
+            <button type="submit" className="btn btn-danger" onClick={cancelClicked}>Cancel</button>
+          </div>
       )
     }
-  } // end renderButtons
+    } // end renderButtons
 
-  // In this version, the location component needs access to the state so it can initialize the
-  // form fields when the edit button is clicked.  Therefore we move the state up.
+    // In this version, the location component needs access to the state so it can initialize the
+    // form fields when the edit button is clicked.  Therefore we move the state up.
 
-  const formSubmitted = (event) => {
-    // Prevent the browser from re-loading the page.
-    event.preventDefault()
-    submitCallback()
+    const formSubmitted = (event) => {
+      // Prevent the browser from re-loading the page.
+      event.preventDefault()
+      submitCallback()
+    }
+
+    return (
+        <div className="location-form">
+          <h1> Locations </h1>
+          <form onSubmit={formSubmitted}>
+            <div className="form-group">
+              <label htmlFor="locationName">Location Name</label>
+              <input type="text" className="locDescription" name="locationName" id="locationName"
+                     placeholder="Location Name" value={location.locationName}
+                     onChange={(event) => updateLocation('locationName', event.target.value)}/>
+            </div>
+            <div className="form-group">
+              <label htmlFor="description">Description</label>
+              <input type="text" className="locDescription" name="description" id="description"
+                     placeholder="Location Description" value={location.description}
+                     onChange={(event) => updateLocation('description', event.target.value)}/>
+            </div>
+            {renderButtons()}
+          </form>
+        </div>
+    )
   }
 
-  return (
-    <div className="location-form">
-      <h1> Locations </h1>
-      <form onSubmit={formSubmitted}>
-        <div className="form-group">
-          <label>Location Name</label>
-          <input type="text" className="locDescription" name="locationName" id="locationName"
-                 placeholder="Location Name" value={location.locationName} onChange={(event) => updateLocation('locationName', event.target.value)} />
-        </div>
-        <div className="form-group">
-          <label htmlFor="description">Description</label>
-          <input type="text" className="locDescription" name="description" id="description"
-                  value={location.description} onChange={(event) => updateLocation('description', event.target.value)} />
-        </div>
-        {renderButtons()}
-      </form>
-    </div>
-  )
-}
