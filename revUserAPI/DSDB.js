@@ -25,10 +25,6 @@ class DSDB {
                 'Asylum is the starting area of Dark Souls and Dark Souls Remastered. Your character will be locked in a prison ' +
                 'and will find its way out whilst reading helpful Orange Guidance Soapstone messages that teach you about the ' +
                 'controls of the game. ");');
-            this.db.run('INSERT INTO Locations (locationName, description) VALUES ("North Undead Asylum", "The Northern Undead ' +
-                'Asylum is the starting area of Dark Souls and Dark Souls Remastered. Your character will be locked in a prison ' +
-                'and will find its way out whilst reading helpful Orange Guidance Soapstone messages that teach you about the ' +
-                'controls of the game. ");');
             this.db.run('INSERT INTO Locations (locationName, description) VALUES ("Undead Parish", "The Undead Parish is a location in Dark Souls and Dark Souls Remastered. Here you will find the first Bell of Awakening. This area can be reached via Undead Burg initially or via Firelink Shrine (once you unlock the elevator) and it\'s also the gateway to Darkroot Garden and Sen\'s Fortress.");');
             this.db.run('INSERT INTO Locations (locationName, description) VALUES ("Depths", "The Depths is an area in Dark Souls and Dark Souls Remastered, accessed from Lower Undead Burg. The door leading down to it is unlocked by the Key to Depths, which is obtained by beating the Capra Demon. It serves as the gateway to Blighttown once you defeat the area\'s boss.");');
             this.db.run('INSERT INTO Locations (locationName, description) VALUES ("Blighttown", "Blighttown is a Location in Dark Souls and Dark Souls Remastered that can be accessed through the Depths or the Valley of Drakes. It serves as a gateway to Quelaag\'s Domain, which then leads on to the Demon Ruins. You can also progress to The Great Hollow and subsequently Ash Lake from here, although you don\'t need to access either of these areas as part of the main quest.");');

@@ -2,49 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0d66c77f-947a-4a80-9332-715c7984cf8e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/user-react-blog-complete/src/components/Abyss.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-react-blog-complete/src/components/AnorLondo.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-react-blog-complete/src/components/Blighttown.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-react-blog-complete/src/components/Catacombs.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-react-blog-complete/src/components/CrystalCave.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-react-blog-complete/src/components/DarkrootBasin.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-react-blog-complete/src/components/DarkrootGarden.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-react-blog-complete/src/components/DemonRuins.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-react-blog-complete/src/components/Depths.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-react-blog-complete/src/components/DukesArchives.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-react-blog-complete/src/components/EntireMap.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-react-blog-complete/src/components/FirelinkShrine.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-react-blog-complete/src/components/KilnOfTheFirstFlame.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-react-blog-complete/src/components/LostIzalith.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-react-blog-complete/src/components/NewLondoRuins.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-react-blog-complete/src/components/QuelaggsDomain.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-react-blog-complete/src/components/SensFortress.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-react-blog-complete/src/components/TombOfGiants.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-react-blog-complete/src/components/UndeadAsylum.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-react-blog-complete/src/components/UndeadBurg.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-react-blog-complete/src/components/UndeadParish.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-react-blog-complete/src/components/AshLake.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-react-blog-complete/src/components/GreatHollow.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-react-blog-complete/src/components/PaintedWorld.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-react-blog-complete/src/components/UndeadAsylumReturn.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-react-blog-complete/src/components/ValleyOfDrakes.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-react-blog-complete/src/maps.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-react-blog-complete/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/user-react-blog-complete/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-react-blog-complete/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/user-react-blog-complete/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/revUserAPI/DSDB.js" beforeDir="false" afterPath="$PROJECT_DIR$/revUserAPI/DSDB.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user-react-blog-complete/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/user-react-blog-complete/src/App.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user-react-blog-complete/src/components/Maps.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/user-react-blog-complete/src/components/Maps.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-react-blog-complete/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/user-react-blog-complete/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-react-blog-complete/src/pictures/AnorLondo.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-react-blog-complete/src/pictures/AnorLondoStart.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-react-blog-complete/src/pictures/BlighttownLower.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-react-blog-complete/src/pictures/BlighttownUpper.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-react-blog-complete/src/pictures/CatacombsOfCarthus.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-react-blog-complete/src/pictures/DSEntireMap.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-react-blog-complete/src/pictures/FirelinkShrine.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-react-blog-complete/src/pictures/LowerUndeadBurg.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-react-blog-complete/src/pictures/NorthernUndeadAsylum.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-react-blog-complete/src/pictures/NorthernUndeadAsylumReturn.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-react-blog-complete/src/pictures/PaintedWorld.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-react-blog-complete/src/pictures/QuelaagsDomain.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-react-blog-complete/src/pictures/SensFortress.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-react-blog-complete/src/pictures/TheDepths.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-react-blog-complete/src/pictures/UndeadBurg.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-react-blog-complete/src/pictures/UndeadParish.jpg" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -57,11 +24,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/revUserAPI/DSDB.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-34">
+              <caret line="26" column="45" selection-start-line="26" selection-start-column="45" selection-end-line="26" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/user-react-blog-complete/src/App.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="224" column="49" selection-start-line="224" selection-start-column="49" selection-end-line="224" selection-end-column="49" />
+            <state relative-caret-position="281">
+              <caret line="84" column="65" lean-forward="true" selection-start-line="84" selection-start-column="65" selection-end-line="84" selection-end-column="96" />
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
               </folding>
@@ -70,85 +46,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/user-react-blog-complete/src/components/SensFortress.jsx">
+        <entry file="file://$PROJECT_DIR$/user-react-blog-complete/src/maps.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/user-react-blog-complete/src/components/NewLondoRuins.jsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="7" column="94" selection-start-line="7" selection-start-column="94" selection-end-line="7" selection-end-column="94" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/user-react-blog-complete/src/components/DukesArchives.jsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="7" column="97" selection-start-line="7" selection-start-column="97" selection-end-line="7" selection-end-column="97" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/user-react-blog-complete/src/components/DemonRuins.jsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="7" column="92" selection-start-line="7" selection-start-column="92" selection-end-line="7" selection-end-column="92" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/user-react-blog-complete/src/components/LostIzalith.jsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/user-react-blog-complete/src/components/QuelaggsDomain.jsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="7" column="95" selection-start-line="7" selection-start-column="95" selection-end-line="7" selection-end-column="95" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/user-react-blog-complete/src/components/DarkrootGarden.jsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="7" column="95" selection-start-line="7" selection-start-column="95" selection-end-line="7" selection-end-column="95" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/user-react-blog-complete/src/components/Maps.jsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="16" column="54" selection-start-line="16" selection-start-column="54" selection-end-line="16" selection-end-column="54" />
-              <folding>
-                <element signature="e#0#25#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/user-react-blog-complete/src/index.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" selection-start-line="15" selection-end-line="15" />
+            <state relative-caret-position="204">
+              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
             </state>
           </provider>
         </entry>
@@ -159,8 +60,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
-        <option value="CSS File" />
         <option value="tsconfig.json" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -181,12 +82,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/revUserAPI/Armor.js" />
-        <option value="$PROJECT_DIR$/revUserAPI/Weapon.js" />
-        <option value="$PROJECT_DIR$/user-react-blog-complete/src/components/WeaponList.jsx" />
-        <option value="$PROJECT_DIR$/revUserAPI/WeaponController.js" />
-        <option value="$PROJECT_DIR$/revUserAPI/ArmorController.js" />
-        <option value="$PROJECT_DIR$/user-react-blog-complete/src/components/Armor.jsx" />
         <option value="$PROJECT_DIR$/user-react-blog-complete/src/components/Weapons.jsx" />
         <option value="$PROJECT_DIR$/user-react-blog-complete/src/components/ArmorForm.jsx" />
         <option value="$PROJECT_DIR$/user-react-blog-complete/src/components/WeaponForm.jsx" />
@@ -204,11 +99,9 @@
         <option value="$PROJECT_DIR$/user-react-blog-complete/src/App.js" />
         <option value="$PROJECT_DIR$/revUserAPI/Location.js" />
         <option value="$PROJECT_DIR$/user-react-blog-complete/src/components/LocationForm.jsx" />
-        <option value="$PROJECT_DIR$/revUserAPI/DSDB.js" />
         <option value="$PROJECT_DIR$/user-react-blog-complete/src/components/WalkThrough.jsx" />
         <option value="$PROJECT_DIR$/user-react-blog-complete/public/index.html" />
         <option value="$PROJECT_DIR$/user-react-blog-complete/src/components/Comment.jsx" />
-        <option value="$PROJECT_DIR$/user-react-blog-complete/src/components/UndeadAsylum.jsx" />
         <option value="$PROJECT_DIR$/user-react-blog-complete/src/components/FirelinkShrine.jsx" />
         <option value="$PROJECT_DIR$/user-react-blog-complete/src/components/UndeadBurg.jsx" />
         <option value="$PROJECT_DIR$/user-react-blog-complete/src/components/UndeadParish.jsx" />
@@ -224,14 +117,22 @@
         <option value="$PROJECT_DIR$/user-react-blog-complete/src/components/Blighttown.jsx" />
         <option value="$PROJECT_DIR$/user-react-blog-complete/src/components/QuelaggsDomain.jsx" />
         <option value="$PROJECT_DIR$/user-react-blog-complete/src/components/DarkrootGarden.jsx" />
-        <option value="$PROJECT_DIR$/user-react-blog-complete/src/components/Maps.jsx" />
-        <option value="$PROJECT_DIR$/user-react-blog-complete/src/App.jsx" />
         <option value="$PROJECT_DIR$/user-react-blog-complete/src/components/SensFortress.jsx" />
         <option value="$PROJECT_DIR$/user-react-blog-complete/src/components/NewLondoRuins.jsx" />
         <option value="$PROJECT_DIR$/user-react-blog-complete/src/components/DukesArchives.jsx" />
         <option value="$PROJECT_DIR$/user-react-blog-complete/src/components/DemonRuins.jsx" />
         <option value="$PROJECT_DIR$/user-react-blog-complete/src/components/LostIzalith.jsx" />
         <option value="$PROJECT_DIR$/user-react-blog-complete/src/index.css" />
+        <option value="$PROJECT_DIR$/user-react-blog-complete/src/components/GreatHollow.jsx" />
+        <option value="$PROJECT_DIR$/user-react-blog-complete/src/components/AshLake.jsx" />
+        <option value="$PROJECT_DIR$/user-react-blog-complete/src/components/UndeadAsylum.jsx" />
+        <option value="$PROJECT_DIR$/user-react-blog-complete/src/components/UndeadAsylumReturn.jsx" />
+        <option value="$PROJECT_DIR$/user-react-blog-complete/src/components/Maps.jsx" />
+        <option value="$PROJECT_DIR$/user-react-blog-complete/src/components/ValleyOfDrakes.jsx" />
+        <option value="$PROJECT_DIR$/user-react-blog-complete/src/components/PaintedWorld.jsx" />
+        <option value="$PROJECT_DIR$/user-react-blog-complete/src/App.jsx" />
+        <option value="$PROJECT_DIR$/user-react-blog-complete/src/maps.css" />
+        <option value="$PROJECT_DIR$/revUserAPI/DSDB.js" />
       </list>
     </option>
   </component>
@@ -260,13 +161,7 @@
             <path>
               <item name="CIS-371-Semster-Project" type="b2602c69:ProjectViewProjectNode" />
               <item name="CIS-371-Semster-Project" type="462c0819:PsiDirectoryNode" />
-              <item name="user-react-blog-complete" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CIS-371-Semster-Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CIS-371-Semster-Project" type="462c0819:PsiDirectoryNode" />
-              <item name="user-react-blog-complete" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="revUserAPI" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -351,7 +246,7 @@
       <workItem from="1587004235493" duration="1372000" />
       <workItem from="1587056185824" duration="6077000" />
       <workItem from="1587169832106" duration="17812000" />
-      <workItem from="1587188568216" duration="25240000" />
+      <workItem from="1587188568216" duration="29228000" />
     </task>
     <servers />
   </component>
@@ -361,7 +256,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="96795000" />
+    <option name="totallyTimeSpent" value="100783000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -390,56 +285,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/user-react-blog-complete/src/components/ArmorList.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user-react-blog-complete/.eslintrc.js" />
-    <entry file="file://$PROJECT_DIR$/user-react-blog-complete/src/components/ArmorForm.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="45" column="32" selection-start-line="45" selection-start-column="32" selection-end-line="45" selection-end-column="32" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Homepage/buttonsAction.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user-react-blog-complete/src/forms.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Homepage/bootStyle.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user-react-blog-complete/src/App.css" />
-    <entry file="file://$PROJECT_DIR$/revUserAPI/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1037">
-          <caret line="61" column="71" selection-start-line="61" selection-start-column="71" selection-end-line="61" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/revUserAPI/Location.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -454,46 +299,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/user-react-blog-complete/src/components/LocationForm.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="952">
-          <caret line="57" column="29" selection-start-line="57" selection-start-column="29" selection-end-line="57" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user-react-blog-complete/src/components/Location.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/user-react-blog-complete/src/components/tsconfig.json" />
     <entry file="file://$PROJECT_DIR$/user-react-blog-complete/src/components/WalkThrough.jsx" />
-    <entry file="file://$PROJECT_DIR$/revUserAPI/DSDB.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="8" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Homepage/bootstrap.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user-react-blog-complete/public/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="918">
-          <caret line="54" column="45" selection-start-line="54" selection-start-column="45" selection-end-line="54" selection-end-column="45" />
         </state>
       </provider>
     </entry>
@@ -507,22 +318,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/user-react-blog-complete/src/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="15" selection-start-line="2" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/user-react-blog-complete/src/BlighttownLower.jpg">
       <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user-react-blog-complete/src/API.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="184" column="26" selection-start-line="184" selection-start-column="20" selection-end-line="184" selection-end-column="26" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/user-react-blog-complete/src/components/Weapons.jsx">
       <provider selected="true" editor-type-id="text-editor">
@@ -550,26 +347,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/user-react-blog-complete/src/components/Armor.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user-react-blog-complete/src/components/UndeadAsylum.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/user-react-blog-complete/src/components/FirelinkShrine.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -587,27 +364,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/user-react-blog-complete/src/components/UndeadParish.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="7" column="93" selection-start-line="7" selection-start-column="93" selection-end-line="7" selection-end-column="93" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/user-react-blog-complete/src/components/EntireMap.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user-react-blog-complete/src/components/WeaponForm.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="23" column="63" selection-start-line="23" selection-start-column="63" selection-end-line="23" selection-end-column="63" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -691,16 +451,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/user-react-blog-complete/src/App.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="224" column="49" selection-start-line="224" selection-start-column="49" selection-end-line="224" selection-end-column="49" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/user-react-blog-complete/src/components/SensFortress.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -736,20 +486,177 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/user-react-blog-complete/src/components/Maps.jsx">
+    <entry file="file://$PROJECT_DIR$/user-react-blog-complete/src/index.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="16" column="54" selection-start-line="16" selection-start-column="54" selection-end-line="16" selection-end-column="54" />
+        <state relative-caret-position="255">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-react-blog-complete/src/components/ArmorList.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
           <folding>
             <element signature="e#0#25#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/user-react-blog-complete/src/index.css">
+    <entry file="file://$PROJECT_DIR$/user-react-blog-complete/src/components/LocationForm.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        <state relative-caret-position="1071">
+          <caret line="63" lean-forward="true" selection-start-line="63" selection-end-line="63" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-react-blog-complete/src/API.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3128">
+          <caret line="184" column="26" selection-start-line="184" selection-start-column="20" selection-end-line="184" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-react-blog-complete/src/components/Armor.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1113">
+          <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-react-blog-complete/src/components/Location.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-react-blog-complete/src/components/GreatHollow.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="7" column="98" selection-start-line="7" selection-start-column="98" selection-end-line="7" selection-end-column="98" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-react-blog-complete/src/components/AshLake.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="3" column="31" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-react-blog-complete/src/components/UndeadAsylum.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-react-blog-complete/src/components/UndeadAsylumReturn.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="7" column="91" selection-start-line="7" selection-start-column="91" selection-end-line="7" selection-end-column="91" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-react-blog-complete/src/components/UndeadParish.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="10" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-react-blog-complete/src/components/ValleyOfDrakes.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="95" selection-start-line="7" selection-start-column="95" selection-end-line="7" selection-end-column="95" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-react-blog-complete/src/components/PaintedWorld.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="7" column="100" selection-start-line="7" selection-start-column="100" selection-end-line="7" selection-end-column="100" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-react-blog-complete/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="20" lean-forward="true" selection-start-line="2" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-react-blog-complete/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="918">
+          <caret line="54" column="45" selection-start-line="54" selection-start-column="45" selection-end-line="54" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-react-blog-complete/src/forms.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-react-blog-complete/src/components/Maps.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="33" lean-forward="true" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-react-blog-complete/src/App.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="84" column="65" lean-forward="true" selection-start-line="84" selection-start-column="65" selection-end-line="84" selection-end-column="96" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-react-blog-complete/src/components/WeaponForm.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="23" column="63" selection-start-line="23" selection-start-column="63" selection-end-line="23" selection-end-column="63" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-react-blog-complete/src/maps.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/revUserAPI/DSDB.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-34">
+          <caret line="26" column="45" selection-start-line="26" selection-start-column="45" selection-end-line="26" selection-end-column="45" />
         </state>
       </provider>
     </entry>

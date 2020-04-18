@@ -26,6 +26,11 @@ import TombOfGiants from "./components/TombOfGiants";
 import Abyss from "./components/Abyss";
 import KilnOfTheFirstFlame from "./components/KilnOfTheFirstFlame";
 import DarkrootGarden from "./components/DarkrootGarden";
+import GreatHollow from "./components/GreatHollow";
+import AshLake from "./components/AshLake";
+import UndeadAsylumReturn from "./components/UndeadAsylumReturn";
+import ValleyOfDrakes from "./components/ValleyOfDrakes";
+import PaintedWorld from "./components/PaintedWorld";
 
 function Comment(props) {
     return (
@@ -60,19 +65,21 @@ function App () {
                         <h2>Welcome to the Dark Souls and Dark Souls Remastered information page where you can find information about your
                             favorite in game items, locations, walk-though tutorials for the confused!</h2>
                     </div>
+                    <nav className="navbar bg-light">
+                        <div className="navbar-nav">
+                            <Link className="nav-item" to="/weapons">Weapons</Link>
+                        </div>
+                        <div className="navbar-nav">
+                            <Link className="nav-item" to="/armor">Armor</Link>
+                        </div>
+                        <div className="navbar-nav">
+                            <Link className="nav-item" to="/locations">Locations</Link>
+                        </div>
+                        <div className="navbar-nav">
+                            <Link className="nav-item" to="/maps">Maps</Link>
+                        </div>
+                    </nav>
                     <div className="row">
-                        <div className="col-sm">
-                            <button><Link to="/weapons">Weapons</Link></button>
-                        </div>
-                        <div className="col-sm">
-                            <button><Link to="/armor">Armor</Link></button>
-                        </div>
-                        <div className="col-sm">
-                            <button><Link to="/locations">Locations</Link></button>
-                        </div>
-                        <div className="col-sm">
-                            <button><Link to="/maps">Maps</Link></button>
-                        </div>
                         <div className="col-sm">
                             <div className="dropdown">
                                 <button type="button" className="btn btn-primary dropdown-toggle"
@@ -156,6 +163,8 @@ function App () {
                                 </div>
                             </div>
                         </div>
+                    </div>
+                        <div className="row">
                         <div className="col-sm">
                             <div className="dropdown">
                                 <button type="button" className="btn btn-primary dropdown-toggle"
@@ -195,7 +204,7 @@ function App () {
                                 </button>
                                 <div className="dropdown-menu">
                                     <a className="dropdown-item" href="https://www.youtube.com/watch?v=usaJqeL9o4M">DS1/DS2 Story</a>
-                                    <a className="dropdown-item" href="https://www.youtube.com/watch?v=usaJqeL9o4M">DS3 Story</a>
+                                    <a className="dropdown-item" href="https://www.youtube.com/watch?v=OjNloSH8EgM&t=1s">DS3 Story</a>
                                     <a className="dropdown-item" href="https://www.youtube.com/watch?v=6M9ONL6BcbU">DS1 Parody</a>
                                     <a className="dropdown-item" href="https://www.youtube.com/watch?v=2kr7KDCsIws">DS2 Parody</a>
                                     <a className="dropdown-item" href="https://www.youtube.com/watch?v=v4O9rMQ-TlU">DS3 Parody</a>
@@ -203,12 +212,6 @@ function App () {
                             </div>
                         </div>
                     </div>
-                <div className="row">
-                    <div className="col-sm">
-                        <ul>
-                        </ul>
-                    </div>
-                </div>
 
                 <Route path="/weapons" component={Weapons} />
                 <Route path="/armor" component={Armor} />
@@ -235,6 +238,11 @@ function App () {
                 <Route path="/maps/tombOfGiants" component={TombOfGiants} />
                 <Route path="/maps/abyss" component={Abyss} />
                 <Route path="/maps/kilnOfTheFirstFlame" component={KilnOfTheFirstFlame} />
+                <Route path="/maps/greatHollow" component={GreatHollow} />
+                <Route path="/maps/ashLake" component={AshLake} />
+                <Route path="/maps/undeadAsylumReturn" component={UndeadAsylumReturn} />
+                <Route path="/maps/paintedWorld" component={PaintedWorld} />
+                <Route path="/maps/valleyOfDrakes" component={ValleyOfDrakes} />
             </div>
         </BrowserRouter>
     )
