@@ -3,8 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="0d66c77f-947a-4a80-9332-715c7984cf8e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-react-blog-complete/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/user-react-blog-complete/src/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-react-blog-complete/src/components/LocationForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/user-react-blog-complete/src/components/LocationForm.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/revUserAPI/DSDB.js" beforeDir="false" afterPath="$PROJECT_DIR$/revUserAPI/DSDB.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/revUserAPI/blog.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/revUserAPI/blog.sqlite" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-react-blog-complete/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/user-react-blog-complete/src/App.jsx" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -18,22 +19,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/user-react-blog-complete/src/components/LocationForm.jsx">
+        <entry file="file://$PROJECT_DIR$/revUserAPI/DSDB.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="952">
-              <caret line="57" column="29" selection-start-line="57" selection-start-column="29" selection-end-line="57" selection-end-column="29" />
-              <folding>
-                <element signature="e#0#25#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="119">
+              <caret line="28" column="8" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="8" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/user-react-blog-complete/src/App.jsx">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/user-react-blog-complete/src/components/Armor.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-25">
-              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+            <state relative-caret-position="204">
+              <caret line="12" column="1" selection-end-line="97" />
               <folding>
                 <element signature="e#0#25#0" expanded="true" />
               </folding>
@@ -42,10 +40,46 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/user-react-blog-complete/src/components/Location.jsx">
+        <entry file="file://$PROJECT_DIR$/user-react-blog-complete/src/API.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="24" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
+            <state relative-caret-position="1532">
+              <caret line="184" column="26" selection-start-line="184" selection-start-column="20" selection-end-line="184" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/user-react-blog-complete/src/App.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-136">
+              <caret line="53" column="23" lean-forward="true" selection-start-line="53" selection-start-column="23" selection-end-line="53" selection-end-column="23" />
+              <folding>
+                <element signature="e#0#25#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/user-react-blog-complete/src/components/WeaponForm.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="23" column="63" selection-start-line="23" selection-start-column="63" selection-end-line="23" selection-end-column="63" />
+              <folding>
+                <element signature="e#0#25#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/user-react-blog-complete/src/components/WeaponList.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="17" column="11" selection-end-line="57" />
+              <folding>
+                <element signature="e#0#25#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -57,6 +91,7 @@
       <list>
         <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="tsconfig.json" />
       </list>
     </option>
   </component>
@@ -95,7 +130,6 @@
         <option value="$PROJECT_DIR$/user-react-blog-complete/src/components/ArmorForm.jsx" />
         <option value="$PROJECT_DIR$/user-react-blog-complete/src/components/WeaponForm.jsx" />
         <option value="$PROJECT_DIR$/revUserAPI/index.js" />
-        <option value="$PROJECT_DIR$/revUserAPI/DSDB.js" />
         <option value="$PROJECT_DIR$/revUserAPI/LocationController.js" />
         <option value="$PROJECT_DIR$/user-react-blog-complete/src/API.jsx" />
         <option value="$PROJECT_DIR$/user-react-blog-complete/src/components/Location.jsx" />
@@ -109,12 +143,14 @@
         <option value="$PROJECT_DIR$/user-react-blog-complete/src/App.js" />
         <option value="$PROJECT_DIR$/revUserAPI/Location.js" />
         <option value="$PROJECT_DIR$/user-react-blog-complete/src/components/LocationForm.jsx" />
+        <option value="$PROJECT_DIR$/revUserAPI/DSDB.js" />
+        <option value="$PROJECT_DIR$/user-react-blog-complete/src/components/WalkThrough.jsx" />
         <option value="$PROJECT_DIR$/user-react-blog-complete/src/App.jsx" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-7" />
+    <option name="x" value="676" />
     <option name="width" value="697" />
     <option name="height" value="735" />
   </component>
@@ -130,6 +166,24 @@
             <path>
               <item name="CIS-371-Semster-Project" type="b2602c69:ProjectViewProjectNode" />
               <item name="CIS-371-Semster-Project" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CIS-371-Semster-Project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CIS-371-Semster-Project" type="462c0819:PsiDirectoryNode" />
+              <item name="user-react-blog-complete" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CIS-371-Semster-Project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CIS-371-Semster-Project" type="462c0819:PsiDirectoryNode" />
+              <item name="user-react-blog-complete" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CIS-371-Semster-Project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CIS-371-Semster-Project" type="462c0819:PsiDirectoryNode" />
+              <item name="user-react-blog-complete" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -207,7 +261,9 @@
       <workItem from="1586894850966" duration="6078000" />
       <workItem from="1586917801407" duration="4638000" />
       <workItem from="1586982023113" duration="111000" />
-      <workItem from="1587004235493" duration="1365000" />
+      <workItem from="1587004235493" duration="1372000" />
+      <workItem from="1587056185824" duration="6077000" />
+      <workItem from="1587169832106" duration="9512000" />
     </task>
     <servers />
   </component>
@@ -217,13 +273,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47659000" />
+    <option name="totallyTimeSpent" value="63255000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22544643" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.22544643" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -313,16 +369,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/user-react-blog-complete/src/components/WeaponList.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="11" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/user-react-blog-complete/src/components/Weapons.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="147">
@@ -364,16 +410,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/user-react-blog-complete/src/components/WeaponForm.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="23" column="63" selection-start-line="23" selection-start-column="63" selection-end-line="23" selection-end-column="63" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/revUserAPI/Armor.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
@@ -402,16 +438,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/user-react-blog-complete/src/components/Armor.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Homepage/buttonsAction.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -423,13 +449,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="274">
           <caret line="25" column="20" lean-forward="true" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user-react-blog-complete/src/API.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="184" column="26" selection-start-line="184" selection-start-column="20" selection-end-line="184" selection-end-column="26" />
         </state>
       </provider>
     </entry>
@@ -448,13 +467,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/user-react-blog-complete/src/App.css" />
-    <entry file="file://$PROJECT_DIR$/revUserAPI/DSDB.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1955">
-          <caret line="115" column="37" selection-start-line="115" selection-start-column="37" selection-end-line="115" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/revUserAPI/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1037">
@@ -509,17 +521,70 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/revUserAPI/DSDB.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="28" column="8" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/user-react-blog-complete/src/components/Location.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
-          <caret line="3" column="24" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
+          <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-react-blog-complete/src/components/tsconfig.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-react-blog-complete/src/components/Armor.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="1" selection-end-line="97" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-react-blog-complete/src/components/WeaponForm.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="23" column="63" selection-start-line="23" selection-start-column="63" selection-end-line="23" selection-end-column="63" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-react-blog-complete/src/components/WeaponList.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="11" selection-end-line="57" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-react-blog-complete/src/components/WalkThrough.jsx">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-react-blog-complete/src/API.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1532">
+          <caret line="184" column="26" selection-start-line="184" selection-start-column="20" selection-end-line="184" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/user-react-blog-complete/src/App.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-25">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        <state relative-caret-position="-136">
+          <caret line="53" column="23" lean-forward="true" selection-start-line="53" selection-start-column="23" selection-end-line="53" selection-end-column="23" />
           <folding>
             <element signature="e#0#25#0" expanded="true" />
           </folding>
