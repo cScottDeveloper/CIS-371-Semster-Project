@@ -3,53 +3,11 @@ import { BrowserRouter, Route, Link, useRouteMatch } from 'react-router-dom'
 import Weapons from './components/Weapons'
 import Armor from './components/Armor'
 import Location from './components/Location'
+import DSFullMap from './pictures/DSEntireMap.jpg'
+import './index.css'
 
 
 function App () {
-    //finish list when it works
-    let listOfLinks = {
-        firelinkShrine: <a href={"https://www.youtube.com/watch?v=6u2w7kzmweU"}>Firelink Shrine</a>
-        // undeadBurg: "https://www.youtube.com/watch?v=9qF1bQY1ayE",
-        // undeadParish: "https://www.youtube.com/watch?v=mhKLQAtcWB4",
-        // priorities: "https://www.youtube.com/watch?v=YHOSRDnXOUE",
-        // darkrootGarden: "https://www.youtube.com/watch?v=csHWnuLBXsA",
-        // darkRootBasin: "https://www.youtube.com/watch?v=O75f_IVdaZE",
-        // lowerUndeadBurg: "https://www.youtube.com/watch?v=VMZu--1sE4U",
-        // theDepths: "https://www.youtube.com/watch?v=drQimgbktYc",
-        // upperBlightTown: "https://www.youtube.com/watch?v=JNfBKkYsX1s",
-        // lowerBlightTown: "https://www.youtube.com/watch?v=eqrPpPxnsek",
-        // choasWithQuaalagg: "https://www.youtube.com/watch?v=BlM1jkBpcqg",
-        // sifGreyWolf: "https://www.youtube.com/watch?v=K1EzdtIrs7w&list=PL7RtZMiaOk8i5W4e8j_Bz6YDdFq3o4aAh&index=12",
-        // sensFortress: "https://www.youtube.com/watch?v=5RhWuvzAt1k&list=PL7RtZMiaOk8i5W4e8j_Bz6YDdFq3o4aAh&index=13",
-        // ironGolem: "https://www.youtube.com/watch?v=SN1EPpyI1Wo&list=PL7RtZMiaOk8i5W4e8j_Bz6YDdFq3o4aAh&index=14",
-        // anorLondo: "https://www.youtube.com/watch?v=vy2_oVqrkzE&list=PL7RtZMiaOk8i5W4e8j_Bz6YDdFq3o4aAh&index=15",
-        // ornstienAndSmough: "https://www.youtube.com/watch?v=kNGhC4tg4B0&list=PL7RtZMiaOk8i5W4e8j_Bz6YDdFq3o4aAh&index=16",
-        // theCatacombs: "https://www.youtube.com/watch?v=LOuCjF7FPtY&list=PL7RtZMiaOk8i5W4e8j_Bz6YDdFq3o4aAh&index=17",
-        // pinwheelAndStrayDragon: "https://www.youtube.com/watch?v=C8XB6WPxH3A&list=PL7RtZMiaOk8i5W4e8j_Bz6YDdFq3o4aAh&index=18",
-        // paintedWorld: "https://www.youtube.com/watch?v=zzD5o6-V7O4&list=PL7RtZMiaOk8i5W4e8j_Bz6YDdFq3o4aAh&index=19",
-        // pricilla: "https://www.youtube.com/watch?v=M8RRaGGIrm0&list=PL7RtZMiaOk8i5W4e8j_Bz6YDdFq3o4aAh&index=20",
-        // valleyOfDrakes: "https://www.youtube.com/watch?v=-fYH3bfiCRA&list=PL7RtZMiaOk8i5W4e8j_Bz6YDdFq3o4aAh&index=21",
-        // newLondoRuins: "https://www.youtube.com/watch?v=lvn9eAFyN3I&list=PL7RtZMiaOk8i5W4e8j_Bz6YDdFq3o4aAh&index=22",
-        // ceaselessDischarge: "https://www.youtube.com/watch?v=NwKII_QXy54&list=PL7RtZMiaOk8i5W4e8j_Bz6YDdFq3o4aAh&index=23",
-        // demonRuins: "https://www.youtube.com/watch?v=BhSQbrovFgs&list=PL7RtZMiaOk8i5W4e8j_Bz6YDdFq3o4aAh&index=24",
-        // lostIzalith: "https://www.youtube.com/watch?v=BMPN1RqggE0&list=PL7RtZMiaOk8i5W4e8j_Bz6YDdFq3o4aAh&index=25",
-        // bedOfChaos: "https://www.youtube.com/watch?v=cp9ej1Aiox0&list=PL7RtZMiaOk8i5W4e8j_Bz6YDdFq3o4aAh&index=26",
-        // dukesArchives: "https://www.youtube.com/watch?v=dfJJWz66-5U&list=PL7RtZMiaOk8i5W4e8j_Bz6YDdFq3o4aAh&index=27",
-        // crystalCaverns: "https://www.youtube.com/watch?v=n-BVhV3nwjI&list=PL7RtZMiaOk8i5W4e8j_Bz6YDdFq3o4aAh&index=28",
-        // greatHollow: "https://www.youtube.com/watch?v=2G5vc7nSn18&list=PL7RtZMiaOk8i5W4e8j_Bz6YDdFq3o4aAh&index=29",
-        // ashLake: "https://www.youtube.com/watch?v=0DZEzrX6mJE&list=PL7RtZMiaOk8i5W4e8j_Bz6YDdFq3o4aAh&index=30",
-        // tombOfGiants: "https://www.youtube.com/watch?v=zu5wj9afHl8&list=PL7RtZMiaOk8i5W4e8j_Bz6YDdFq3o4aAh&index=31",
-        // royalWoodKnightArtorias: "https://www.youtube.com/watch?v=r1Arhu0KEyw&list=PL7RtZMiaOk8i5W4e8j_Bz6YDdFq3o4aAh&index=32",
-        // oolacileTownship: "https://www.youtube.com/watch?v=dmqr1oHEtIk&list=PL7RtZMiaOk8i5W4e8j_Bz6YDdFq3o4aAh&index=33",
-        // blackDragonKalameet: "https://www.youtube.com/watch?v=GVwvZAHqO5g&list=PL7RtZMiaOk8i5W4e8j_Bz6YDdFq3o4aAh&index=34",
-        // chasmOfTheAbyss: "https://www.youtube.com/watch?v=9BKWZ22DmWg&list=PL7RtZMiaOk8i5W4e8j_Bz6YDdFq3o4aAh&index=35",
-        // gwynLordOfCinder: "https://www.youtube.com/watch?v=w6KUftT853g&list=PL7RtZMiaOk8i5W4e8j_Bz6YDdFq3o4aAh&index=36"
-     };
-    function showLinks(){
-        let x = document.getElementById("link-list");
-            x.innerHTML = listOfLinks.firelinkShrine;
-    }
-
     return (
         <BrowserRouter>
             <div className="container-fluid">
@@ -57,57 +15,145 @@ function App () {
                         <h2>Welcome to the Dark Souls and Dark Souls Remastered information page where you can find information about your
                             favorite in game items, locations, walk-though tutorials for the confused!</h2>
                     </div>
+                <p><image src={DSFullMap} alt="Full Dark Souls Map"/></p>
+
                     <div className="row">
-                        <div className="col-sm-3">
+                        <div className="col-sm">
                             <button><Link to="/weapons">Weapons</Link></button>
                         </div>
-                        <div className="col-sm-3">
+                        <div className="col-sm">
                             <button><Link to="/armor">Armor</Link></button>
                         </div>
-                        <div className="col-sm-3">
+                        <div className="col-sm">
                             <button><Link to="/locations">Locations</Link></button>
                         </div>
-                        <div className="col-sm-3">
-                            <p>A list of walk-through links:</p>
+                        <div className="col-sm">
                             <div className="dropdown">
-                                <button className="dropbtn">Dropdown</button>
-                                <div className="dropdown-content">
-                            <a href="https://www.youtube.com/watch?v=6u2w7kzmweU">Firelink Shrine</a>
-                            <a href="">Undead Burg</a>
-                            <a href="">Undead Parish</a>
-                            <a href="">Priorites</a>
-                            <a href="">Darkroot Garden</a>
-                            <a href="">Darkroot Basin</a>
-                            <a href="">Lower Undead Burg</a>
-                            <a href="">The Depths</a>
-                            <a href="">Upper Blighttown</a>
-                            <a href="">Lower Blighttown</a>
-                            <a href="">Chaos with Quelaag</a>
-                            <a href="">Sif the Great Grey Wolf</a>
-                            <a href="">Sen's Fortress</a>
-                            <a href="">Iron Golem</a>
-                            <a href="">Anor Londo</a>
-                            <a href="">Ornstein and Smough</a>
-                            <a href="">The Catacombs</a>
-                            <a href="">The Pinwheel and Stray Demon</a>
-                            <a href="">Painted World of Ariamis</a>
-                            <a href="">Crossbreed Priscilla</a>
-                            <a href="">Dark Sun Gwyndolin + Valley of the Drakes</a>
-                            <a href="">New Londo Ruins + Four Kings</a>
-                            <a href="">Ceaseless Discharge</a>
-                            <a href="">Demon Ruins + Firesage Demon</a>
-                            <a href="">Lost Izalith</a>
-                            <a href="">Bed of Chaos</a>
-                            <a href="">Duke's Archives</a>
-                            <a href="">Crystal Caverns + Seath the Scaleless</a>
-                            <a href="">The Great Hollow</a>
-                            <a href="">Ash Lake</a>
-                            <a href="">Tomb of Giants + Nito</a>
-                            <a href="">Royal Wood + Night Artorias</a>
-                            <a href="">Oolacile Township</a>
-                            <a href="">Black Dragon Kalameet</a>
-                            <a href="">Chasm of the Abyss + Manus</a>
-                            <a href="">Gwyn, Lord of Cinder</a>
+                                <button type="button" className="btn btn-primary dropdown-toggle"
+                                        data-toggle="dropdown">
+                                    Walk-through
+                                </button>
+                                <div className="dropdown-menu">
+                            <a className="dropdown-item" href="https://www.youtube.com/watch?v=6u2w7kzmweU">Firelink Shrine</a>
+                            <a className="dropdown-item" href="https://www.youtube.com/watch?v=9qF1bQY1ayE">Undead Burg</a>
+                            <a className="dropdown-item" href="https://www.youtube.com/watch?v=mhKLQAtcWB4">Undead Parish</a>
+                            <a className="dropdown-item" href="https://www.youtube.com/watch?v=YHOSRDnXOUE">Priorites</a>
+                            <a className="dropdown-item" href="https://www.youtube.com/watch?v=csHWnuLBXsA">Darkroot Garden</a>
+                            <a className="dropdown-item" href="https://www.youtube.com/watch?v=O75f_IVdaZE">Darkroot Basin</a>
+                            <a className="dropdown-item" href="https://www.youtube.com/watch?v=VMZu--1sE4U">Lower Undead Burg</a>
+                            <a className="dropdown-item" href="https://www.youtube.com/watch?v=drQimgbktYc">The Depths</a>
+                            <a className="dropdown-item" href="https://www.youtube.com/watch?v=JNfBKkYsX1s">Upper Blighttown</a>
+                            <a className="dropdown-item" href="https://www.youtube.com/watch?v=eqrPpPxnsek">Lower Blighttown</a>
+                            <a className="dropdown-item" href="https://www.youtube.com/watch?v=BlM1jkBpcqg">Chaos with Quelaag</a>
+                            <a className="dropdown-item" href="https://www.youtube.com/watch?v=K1EzdtIrs7w&list=PL7RtZMiaOk8i5W4e8j_Bz6YDdFq3o4aAh&index=12">Sif the Great Grey Wolf</a>
+                            <a className="dropdown-item" href="https://www.youtube.com/watch?v=5RhWuvzAt1k&list=PL7RtZMiaOk8i5W4e8j_Bz6YDdFq3o4aAh&index=13">Sen's Fortress</a>
+                            <a className="dropdown-item" href="https://www.youtube.com/watch?v=SN1EPpyI1Wo&list=PL7RtZMiaOk8i5W4e8j_Bz6YDdFq3o4aAh&index=14">Iron Golem</a>
+                            <a className="dropdown-item" href="https://www.youtube.com/watch?v=vy2_oVqrkzE&list=PL7RtZMiaOk8i5W4e8j_Bz6YDdFq3o4aAh&index=15">Anor Londo</a>
+                            <a className="dropdown-item" href="https://www.youtube.com/watch?v=kNGhC4tg4B0&list=PL7RtZMiaOk8i5W4e8j_Bz6YDdFq3o4aAh&index=16">Ornstein and Smough</a>
+                            <a className="dropdown-item" href="https://www.youtube.com/watch?v=LOuCjF7FPtY&list=PL7RtZMiaOk8i5W4e8j_Bz6YDdFq3o4aAh&index=17">The Catacombs</a>
+                            <a className="dropdown-item" href="https://www.youtube.com/watch?v=C8XB6WPxH3A&list=PL7RtZMiaOk8i5W4e8j_Bz6YDdFq3o4aAh&index=18">The Pinwheel and Stray Demon</a>
+                            <a className="dropdown-item" href="https://www.youtube.com/watch?v=zzD5o6-V7O4&list=PL7RtZMiaOk8i5W4e8j_Bz6YDdFq3o4aAh&index=19">Painted World of Ariamis</a>
+                            <a className="dropdown-item" href="https://www.youtube.com/watch?v=M8RRaGGIrm0&list=PL7RtZMiaOk8i5W4e8j_Bz6YDdFq3o4aAh&index=20">Crossbreed Priscilla</a>
+                            <a className="dropdown-item" href="https://www.youtube.com/watch?v=-fYH3bfiCRA&list=PL7RtZMiaOk8i5W4e8j_Bz6YDdFq3o4aAh&index=21">Dark Sun Gwyndolin + Valley of the Drakes</a>
+                            <a className="dropdown-item" href="https://www.youtube.com/watch?v=lvn9eAFyN3I&list=PL7RtZMiaOk8i5W4e8j_Bz6YDdFq3o4aAh&index=22">New Londo Ruins + Four Kings</a>
+                            <a className="dropdown-item" href="https://www.youtube.com/watch?v=NwKII_QXy54&list=PL7RtZMiaOk8i5W4e8j_Bz6YDdFq3o4aAh&index=23">Ceaseless Discharge</a>
+                            <a className="dropdown-item" href="https://www.youtube.com/watch?v=BhSQbrovFgs&list=PL7RtZMiaOk8i5W4e8j_Bz6YDdFq3o4aAh&index=24">Demon Ruins + Firesage Demon</a>
+                            <a className="dropdown-item" href="https://www.youtube.com/watch?v=BMPN1RqggE0&list=PL7RtZMiaOk8i5W4e8j_Bz6YDdFq3o4aAh&index=25">Lost Izalith</a>
+                            <a className="dropdown-item" href="https://www.youtube.com/watch?v=cp9ej1Aiox0&list=PL7RtZMiaOk8i5W4e8j_Bz6YDdFq3o4aAh&index=26">Bed of Chaos</a>
+                            <a className="dropdown-item" href="https://www.youtube.com/watch?v=dfJJWz66-5U&list=PL7RtZMiaOk8i5W4e8j_Bz6YDdFq3o4aAh&index=27">Duke's Archives</a>
+                            <a className="dropdown-item" href="https://www.youtube.com/watch?v=n-BVhV3nwjI&list=PL7RtZMiaOk8i5W4e8j_Bz6YDdFq3o4aAh&index=28">Crystal Caverns + Seath the Scaleless</a>
+                            <a className="dropdown-item" href="https://www.youtube.com/watch?v=2G5vc7nSn18&list=PL7RtZMiaOk8i5W4e8j_Bz6YDdFq3o4aAh&index=29">The Great Hollow</a>
+                            <a className="dropdown-item" href="https://www.youtube.com/watch?v=0DZEzrX6mJE&list=PL7RtZMiaOk8i5W4e8j_Bz6YDdFq3o4aAh&index=30">Ash Lake</a>
+                            <a className="dropdown-item" href="https://www.youtube.com/watch?v=zu5wj9afHl8&list=PL7RtZMiaOk8i5W4e8j_Bz6YDdFq3o4aAh&index=31">Tomb of Giants + Nito</a>
+                            <a className="dropdown-item" href="https://www.youtube.com/watch?v=r1Arhu0KEyw&list=PL7RtZMiaOk8i5W4e8j_Bz6YDdFq3o4aAh&index=32">Royal Wood + Night Artorias</a>
+                            <a className="dropdown-item" href="https://www.youtube.com/watch?v=dmqr1oHEtIk&list=PL7RtZMiaOk8i5W4e8j_Bz6YDdFq3o4aAh&index=33">Oolacile Township</a>
+                            <a className="dropdown-item" href="https://www.youtube.com/watch?v=GVwvZAHqO5g&list=PL7RtZMiaOk8i5W4e8j_Bz6YDdFq3o4aAh&index=34">Black Dragon Kalameet</a>
+                            <a className="dropdown-item" href="https://www.youtube.com/watch?v=9BKWZ22DmWg&list=PL7RtZMiaOk8i5W4e8j_Bz6YDdFq3o4aAh&index=35">Chasm of the Abyss + Manus</a>
+                            <a className="dropdown-item" href="https://www.youtube.com/watch?v=w6KUftT853g&list=PL7RtZMiaOk8i5W4e8j_Bz6YDdFq3o4aAh&index=36">Gwyn, Lord of Cinder</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-sm">
+                            <div className="dropdown">
+                                <button type="button" className="btn btn-primary dropdown-toggle"
+                                        data-toggle="dropdown">
+                                    Spells
+                                </button>
+                                <div className="dropdown-menu">
+                                    <a className="dropdown-item" href="https://www.youtube.com/watch?v=pNh3K5nc2i8">All Pyromancies</a>
+                                    <a className="dropdown-item" href="https://www.youtube.com/watch?v=FkeAQXVBeFE">All Miracles</a>
+                                    <a className="dropdown-item" href="https://www.youtube.com/watch?v=wezjcLz61hk">All Sorceries</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-sm">
+                            <div className="dropdown">
+                                <button type="button" className="btn btn-primary dropdown-toggle"
+                                        data-toggle="dropdown">
+                                    Items
+                                </button>
+                                <div className="dropdown-menu">
+                                    <a className="dropdown-item" href="https://www.youtube.com/watch?v=cpVu-scdBmk">Fire Keeper Souls</a>
+                                    <a className="dropdown-item" href="https://www.youtube.com/watch?v=wUY9jyLj3-Y">All Ring Locations</a>
+                                    <a className="dropdown-item" href="https://www.youtube.com/watch?v=SDjFiHov76U">Alphabetical Armor Locations</a>
+                                    <a className="dropdown-item" href="https://www.youtube.com/watch?v=7IeGlDG8c2o">Bows</a>
+                                    <a className="dropdown-item" href="https://www.youtube.com/watch?v=axyGawS2_84&t=26s">Katanas</a>
+                                    <a className="dropdown-item" href="https://www.youtube.com/watch?v=7BCn65lmZt0">Great Swords</a>
+                                    <a className="dropdown-item" href="https://www.youtube.com/watch?v=ZsuikpK22RQ">Ultra Great Swords</a>
+                                    <a className="dropdown-item" href="https://www.youtube.com/watch?v=d70camzrIEo">Straight Swords</a>
+                                    <a className="dropdown-item" href="https://www.youtube.com/watch?v=qGy-MVoBy6Y">Curved Swords</a>
+                                    <a className="dropdown-item" href="https://www.youtube.com/watch?v=rjBenu5VVwE">Daggers</a>
+                                    <a className="dropdown-item" href="https://www.youtube.com/watch?v=A8LJXHtLDK0">Axes</a>
+                                    <a className="dropdown-item" href="https://www.youtube.com/watch?v=YW61UWwZ8ys">Great Axes</a>
+                                    <a className="dropdown-item" href="https://www.youtube.com/watch?v=dOuYfp7KWNs">Catalysts</a>
+                                    <a className="dropdown-item" href="https://www.youtube.com/watch?v=0COXu-BtVzo">Pyromancy Flames</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-sm">
+                            <div className="dropdown">
+                                <button type="button" className="btn btn-primary dropdown-toggle"
+                                        data-toggle="dropdown">
+                                    Builds
+                                </button>
+                                <div className="dropdown-menu">
+                                    <a className="dropdown-item" href="https://www.youtube.com/watch?v=H7cP9ontlfc&list=PLjtbGCGtzW4VtmyhJiNsN4pBb524l2RdZ&index=1">Quality</a>
+                                    <a className="dropdown-item" href="https://www.youtube.com/watch?v=xWPv16FA0ok&list=PLjtbGCGtzW4VtmyhJiNsN4pBb524l2RdZ&index=2">Dexterity</a>
+                                    <a className="dropdown-item" href="https://www.youtube.com/watch?v=9V1OY9d6La8&list=PLjtbGCGtzW4VtmyhJiNsN4pBb524l2RdZ&index=3">Strength</a>
+                                    <a className="dropdown-item" href="https://www.youtube.com/watch?v=bOj4efod0zk&list=PLjtbGCGtzW4VtmyhJiNsN4pBb524l2RdZ&index=4">Sorcery</a>
+                                    <a className="dropdown-item" href="https://www.youtube.com/watch?v=iC1ObS3-m5s&list=PLjtbGCGtzW4VtmyhJiNsN4pBb524l2RdZ&index=5">Faith</a>
+                                    <a className="dropdown-item" href="https://www.youtube.com/watch?v=f08tSzj5yKY&list=PLjtbGCGtzW4VtmyhJiNsN4pBb524l2RdZ&index=19">Bleed</a>
+                                    <a className="dropdown-item" href="https://www.youtube.com/watch?v=d1hmkoYc2Xo&list=PLjtbGCGtzW4VtmyhJiNsN4pBb524l2RdZ&index=21">Toxic</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-sm">
+                            <div className="dropdown">
+                                <button type="button" className="btn btn-primary dropdown-toggle"
+                                        data-toggle="dropdown">
+                                    Hints
+                                </button>
+                                <div className="dropdown-menu">
+                                    <a className="dropdown-item" href="https://www.youtube.com/watch?v=XjMfBim_cdQ">Parrying</a>
+                                    <a className="https://www.youtube.com/watch?v=RRIVKnlysBc">Start OP</a>
+                                    <a className="https://www.youtube.com/watch?v=hhaQVaqeOSI">Siegmeyer Full Quest Line</a>
+                                    <a className="https://www.youtube.com/watch?v=yScJo3eb77c">Boss Difficulties</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-sm">
+                            <div className="dropdown">
+                                <button type="button" className="btn btn-primary dropdown-toggle"
+                                        data-toggle="dropdown">
+                                    Extras
+                                </button>
+                                <div className="dropdown-menu">
+                                    <a className="dropdown-item" href="https://www.youtube.com/watch?v=usaJqeL9o4M">DS1/DS2 Story</a>
+                                    <a className="dropdown-item" href="https://www.youtube.com/watch?v=usaJqeL9o4M">DS3 Story</a>
+                                    <a className="dropdown-item" href="https://www.youtube.com/watch?v=6M9ONL6BcbU">DS1 Parody</a>
+                                    <a className="dropdown-item" href="https://www.youtube.com/watch?v=2kr7KDCsIws">DS2 Parody</a>
+                                    <a className="dropdown-item" href="https://www.youtube.com/watch?v=v4O9rMQ-TlU">DS3 Parody</a>
+                                    <a className="dropdown-item" href="">DS3 Parody</a>
                                 </div>
                             </div>
                         </div>
