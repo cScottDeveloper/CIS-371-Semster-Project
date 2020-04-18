@@ -3,10 +3,32 @@ import { BrowserRouter, Route, Link, useRouteMatch } from 'react-router-dom'
 import Weapons from './components/Weapons'
 import Armor from './components/Armor'
 import Location from './components/Location'
-import DSFullMap from './pictures/DSEntireMap.jpg'
+import Maps from './components/Maps'
 import './index.css'
 
+function Map(props) {
+    return (
+        <div className="Map">
+            <div className="MapInfo">
+                <img
+                    className="firelink-map"
+                    src={props.author.mapUrl}
+                    alt={props.author.name}
+                />
+                <div className="MapInfo-name">
+                    {props.author.name}
+                </div>
+            </div>
+        </div>
+    );
+}
 
+const map = {
+    author: {
+        name: 'Firelink Shrine',
+        mapUrl: 'https://darksouls.wiki.fextralife.com/file/Dark-Souls/FirelinkShrineMap.jpg',
+    }
+};
 function App () {
     return (
         <BrowserRouter>
@@ -15,8 +37,11 @@ function App () {
                         <h2>Welcome to the Dark Souls and Dark Souls Remastered information page where you can find information about your
                             favorite in game items, locations, walk-though tutorials for the confused!</h2>
                     </div>
-                <p><image src={DSFullMap} alt="Full Dark Souls Map"/></p>
-
+                <div className="comment-area">
+                    <Map
+                        author={map.author}
+                    />
+                </div>
                     <div className="row">
                         <div className="col-sm">
                             <button><Link to="/weapons">Weapons</Link></button>
@@ -135,9 +160,9 @@ function App () {
                                 </button>
                                 <div className="dropdown-menu">
                                     <a className="dropdown-item" href="https://www.youtube.com/watch?v=XjMfBim_cdQ">Parrying</a>
-                                    <a className="https://www.youtube.com/watch?v=RRIVKnlysBc">Start OP</a>
-                                    <a className="https://www.youtube.com/watch?v=hhaQVaqeOSI">Siegmeyer Full Quest Line</a>
-                                    <a className="https://www.youtube.com/watch?v=yScJo3eb77c">Boss Difficulties</a>
+                                    <a className="dropdown-item" href="https://www.youtube.com/watch?v=RRIVKnlysBc">Start OP</a>
+                                    <a className="dropdown-item" href="https://www.youtube.com/watch?v=hhaQVaqeOSI">Siegmeyer Full Quest Line</a>
+                                    <a className="dropdown-item" href="https://www.youtube.com/watch?v=yScJo3eb77c">Boss Difficulties</a>
                                 </div>
                             </div>
                         </div>
@@ -153,7 +178,6 @@ function App () {
                                     <a className="dropdown-item" href="https://www.youtube.com/watch?v=6M9ONL6BcbU">DS1 Parody</a>
                                     <a className="dropdown-item" href="https://www.youtube.com/watch?v=2kr7KDCsIws">DS2 Parody</a>
                                     <a className="dropdown-item" href="https://www.youtube.com/watch?v=v4O9rMQ-TlU">DS3 Parody</a>
-                                    <a className="dropdown-item" href="">DS3 Parody</a>
                                 </div>
                             </div>
                         </div>
