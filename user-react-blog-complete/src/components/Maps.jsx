@@ -1,38 +1,48 @@
-import API from '../API'
 import React from 'react'
-
-
-function formatDate(date) {
-    return date.toLocaleDateString();
-}
-
-export default function Maps(props) {
+import {Link} from "react-router-dom";
+function MapList() {
     return (
-        <div className="Comment">
-            <div className="UserInfo">
-                <img
-                    className="Avatar"
-                    src={props.author.avatarUrl}
-                    alt={props.author.name}
-                />
-                <div className="UserInfo-name">
-                    {props.author.name}
-                </div>
+        <div className="container">
+            <div className="row">
+                <div className="col">
+                <ul>
+                    <li><Link to="/maps/entireMap">Entire Map</Link></li>
+                    <li><Link to="/maps/undeadAsylum">Undead Asylum</Link></li>
+                    <li><Link to="/maps/firelinkShrine">Firelink Shrine</Link></li>
+                    <li><Link to="/maps/undeadBurg">Undead Burg</Link></li>
+                    <li><Link to="/maps/undeadParish">Undead Parish</Link></li>
+                    <li><Link to="/maps/depths">The Depths</Link></li>
+                    <li><Link to="/maps/blighttown">Blighttown</Link></li>
+                    <li><Link to="/maps/quelaggsDomain">Quelaag's Domain</Link></li>
+                    <li><Link to="/maps/darkrootGarden">Darkroot Garden</Link></li>
+                    <li><Link to="/maps/darkrootBasin">Darkroot Basin</Link></li>
+                    <li><Link to="/maps/sensFortress">Sen's Fortress</Link></li>
+                </ul>
             </div>
-            <div className="Comment-text">{props.text}</div>
-            <div className="Comment-date">
-                {formatDate(props.date)}
+                <div className="col">
+                    <ul>
+                        <li><Link to="/maps/anorLondo">Anor Londo</Link></li>
+                        <li><Link to="/maps/newLondoRuins">New Londo Ruins</Link></li>
+                        <li><Link to="/maps/dukesArchives">The Duke's Archives</Link></li>
+                        <li><Link to="/maps/crystalCave">Crystal Cave</Link></li>
+                        <li><Link to="/maps/demonRuins">Demon Ruins</Link></li>
+                        <li><Link to="/maps/lostIzalith">Lost Izalith</Link></li>
+                        <li><Link to="/maps/catacombs">Catacombs</Link></li>
+                        <li><Link to="/maps/tombOfGiants">Tomb of Giants</Link></li>
+                        <li><Link to="/maps/abyss">The Abyss</Link></li>
+                        <li><Link to="/maps/kilnOfTheFirstFlame">Kiln of the First Flame</Link></li>
+                    </ul>
+                </div>
             </div>
         </div>
     );
 }
+function Maps() {
+    return (
+        <div className="maps">
+            <MapList />
+        </div>
+    );
+}
 
-const comment = {
-    date: new Date(),
-    text: 'I hope you enjoy learning React!',
-    author: {
-        name: 'Hello Kitty',
-        avatarUrl: 'https://placekitten.com/g/64/64',
-    },
-};
-
+export default Maps;

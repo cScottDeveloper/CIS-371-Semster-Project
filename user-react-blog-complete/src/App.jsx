@@ -4,29 +4,52 @@ import Weapons from './components/Weapons'
 import Armor from './components/Armor'
 import Location from './components/Location'
 import Maps from './components/Maps'
+import UndeadAsylum from './components/UndeadAsylum'
 import './index.css'
+import FirelinkShrine from "./components/FirelinkShrine";
+import UndeadBurg from "./components/UndeadBurg";
+import UndeadParish from "./components/UndeadParish";
+import Depths from "./components/Depths";
+import Blighttown from "./components/Blighttown";
+import QuelaggsDomain from "./components/QuelaggsDomain";
+import EntireMap from "./components/EntireMap";
+import DarkrootBasin from "./components/DarkrootBasin";
+import SensFortress from "./components/SensFortress";
+import AnorLondo from "./components/AnorLondo";
+import NewLondoRuins from "./components/NewLondoRuins";
+import DukesArchives from "./components/DukesArchives";
+import CrystalCave from "./components/CrystalCave";
+import DemonRuins from "./components/DemonRuins";
+import LostIzalith from "./components/LostIzalith";
+import Catacombs from "./components/Catacombs";
+import TombOfGiants from "./components/TombOfGiants";
+import Abyss from "./components/Abyss";
+import KilnOfTheFirstFlame from "./components/KilnOfTheFirstFlame";
+import DarkrootGarden from "./components/DarkrootGarden";
 
-function Map(props) {
+function Comment(props) {
     return (
-        <div className="Map">
-            <div className="MapInfo">
+        <div className="Comment">
+            <div className="UserInfo">
                 <img
-                    className="firelink-map"
-                    src={props.author.mapUrl}
+                    className="Avatar"
+                    src={props.author.avatarUrl}
                     alt={props.author.name}
                 />
-                <div className="MapInfo-name">
+                <div className="UserInfo-name">
                     {props.author.name}
                 </div>
             </div>
+            <div className="Comment-text">{props.text}</div>
         </div>
     );
 }
 
-const map = {
+const comment = {
+    text: 'Recommended order: Second Location',
     author: {
         name: 'Firelink Shrine',
-        mapUrl: 'https://darksouls.wiki.fextralife.com/file/Dark-Souls/FirelinkShrineMap.jpg',
+        avatarUrl: 'https://darksouls.wiki.fextralife.com/file/Dark-Souls/FirelinkShrineMap.jpg',
     }
 };
 function App () {
@@ -37,11 +60,6 @@ function App () {
                         <h2>Welcome to the Dark Souls and Dark Souls Remastered information page where you can find information about your
                             favorite in game items, locations, walk-though tutorials for the confused!</h2>
                     </div>
-                <div className="comment-area">
-                    <Map
-                        author={map.author}
-                    />
-                </div>
                     <div className="row">
                         <div className="col-sm">
                             <button><Link to="/weapons">Weapons</Link></button>
@@ -51,6 +69,9 @@ function App () {
                         </div>
                         <div className="col-sm">
                             <button><Link to="/locations">Locations</Link></button>
+                        </div>
+                        <div className="col-sm">
+                            <button><Link to="/maps">Maps</Link></button>
                         </div>
                         <div className="col-sm">
                             <div className="dropdown">
@@ -182,10 +203,38 @@ function App () {
                             </div>
                         </div>
                     </div>
+                <div className="row">
+                    <div className="col-sm">
+                        <ul>
+                        </ul>
+                    </div>
+                </div>
 
                 <Route path="/weapons" component={Weapons} />
                 <Route path="/armor" component={Armor} />
                 <Route path="/locations" component={Location} />
+                <Route path="/maps" component={Maps} />
+                <Route path="/maps/undeadAsylum" component={UndeadAsylum} />
+                <Route path="/maps/firelinkShrine" component={FirelinkShrine} />
+                <Route path="/maps/undeadBurg" component={UndeadBurg} />
+                <Route path="/maps/undeadParish" component={UndeadParish} />
+                <Route path="/maps/depths" component={Depths} />
+                <Route path="/maps/blighttown" component={Blighttown} />
+                <Route path="/maps/quelaggsDomain" component={QuelaggsDomain} />
+                <Route path="/maps/darkrootBasin" component={DarkrootBasin} />
+                <Route path="/maps/darkrootGarden" component={DarkrootGarden} />
+                <Route path="/maps/sensFortress" component={SensFortress} />
+                <Route path="/maps/anorLondo" component={AnorLondo} />
+                <Route path="/maps/entireMap" component={EntireMap} />
+                <Route path="/maps/newLondoRuins" component={NewLondoRuins} />
+                <Route path="/maps/dukesArchives" component={DukesArchives} />
+                <Route path="/maps/crystalCave" component={CrystalCave} />
+                <Route path="/maps/demonRuins" component={DemonRuins} />
+                <Route path="/maps/lostIzalith" component={LostIzalith} />
+                <Route path="/maps/catacombs" component={Catacombs} />
+                <Route path="/maps/tombOfGiants" component={TombOfGiants} />
+                <Route path="/maps/abyss" component={Abyss} />
+                <Route path="/maps/kilnOfTheFirstFlame" component={KilnOfTheFirstFlame} />
             </div>
         </BrowserRouter>
     )
