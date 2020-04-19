@@ -30,16 +30,20 @@ import AshLake from "./components/AshLake";
 import UndeadAsylumReturn from "./components/UndeadAsylumReturn";
 import ValleyOfDrakes from "./components/ValleyOfDrakes";
 import PaintedWorld from "./components/PaintedWorld";
+import './index.css';
 function App () {
     return (
         <BrowserRouter>
             <div className="container-fluid">
                     <div className="welcome-info">
+                        <div className="shadow p-4 mb-4 bg-white">
                         <div className="display-3">Dark Souls Guide</div>
                         <h2>Welcome you can find/edit information about your
                             favorite in game weapons, armor, locations, more!</h2>
+                        </div>
                     </div>
-                    <nav className="navbar bg-light">
+                <nav className="navbar navbar-expand-sm bg-dark navbar-dark fixed-top justify-content-center">
+                        <div className="row">
                         <div className="navbar-nav">
                             <Link className="nav-item" to="/weapons">Weapons</Link>
                         </div>
@@ -51,6 +55,7 @@ function App () {
                         </div>
                         <div className="navbar-nav">
                             <Link className="nav-item" to="/maps">Maps</Link>
+                        </div>
                         </div>
                     </nav>
                     <div className="row">

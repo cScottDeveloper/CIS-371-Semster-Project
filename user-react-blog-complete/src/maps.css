@@ -10,6 +10,16 @@
 .dropdown{
     margin: 10px;
 }
+.navbar-nav{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.nav-item{
+    color: white;
+}
+.display-3{
+    margin-top: 80px;
+}
 body, html {
     height: 100%;
     margin: 0;
