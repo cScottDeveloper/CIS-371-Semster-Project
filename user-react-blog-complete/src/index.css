@@ -12,5 +12,14 @@ code {
     monospace;
 }
 
-.col-sm .dropdown .dropdown-menu img{
+body, html {
+  height: 100%;
+}
+.bg {
+  background-image: url("https://c4.wallpaperflare.com/wallpaper/732/992/859/warrior-artwork-dark-souls-simple-background-wallpaper-preview.jpg");
+  height: 100vh;
+  opacity: 0.2;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }

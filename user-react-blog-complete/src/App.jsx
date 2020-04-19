@@ -1,11 +1,10 @@
 import React from 'react'
-import { BrowserRouter, Route, Link, useRouteMatch } from 'react-router-dom'
+import { BrowserRouter, Route, Link} from 'react-router-dom'
 import Weapons from './components/Weapons'
 import Armor from './components/Armor'
 import Location from './components/Location'
 import Maps from './components/Maps'
 import UndeadAsylum from './components/UndeadAsylum'
-import './index.css'
 import FirelinkShrine from "./components/FirelinkShrine";
 import UndeadBurg from "./components/UndeadBurg";
 import UndeadParish from "./components/UndeadParish";
@@ -31,39 +30,14 @@ import AshLake from "./components/AshLake";
 import UndeadAsylumReturn from "./components/UndeadAsylumReturn";
 import ValleyOfDrakes from "./components/ValleyOfDrakes";
 import PaintedWorld from "./components/PaintedWorld";
-
-function Comment(props) {
-    return (
-        <div className="Comment">
-            <div className="UserInfo">
-                <img
-                    className="Avatar"
-                    src={props.author.avatarUrl}
-                    alt={props.author.name}
-                />
-                <div className="UserInfo-name">
-                    {props.author.name}
-                </div>
-            </div>
-            <div className="Comment-text">{props.text}</div>
-        </div>
-    );
-}
-
-const comment = {
-    text: 'Recommended order: Second Location',
-    author: {
-        name: 'Firelink Shrine',
-        avatarUrl: 'https://darksouls.wiki.fextralife.com/file/Dark-Souls/FirelinkShrineMap.jpg',
-    }
-};
 function App () {
     return (
         <BrowserRouter>
             <div className="container-fluid">
                     <div className="welcome-info">
-                        <h2>Welcome to the Dark Souls and Dark Souls Remastered information page where you can find information about your
-                            favorite in game items, locations, walk-though tutorials for the confused!</h2>
+                        <div className="display-3">Dark Souls Guide</div>
+                        <h2>Welcome you can find/edit information about your
+                            favorite in game weapons, armor, locations, more!</h2>
                     </div>
                     <nav className="navbar bg-light">
                         <div className="navbar-nav">
