@@ -1,0 +1,19 @@
+.hintArea{
+    color: white;
+    text-align: center;
+}
+.hintButton{
+    border-radius: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+.hintAreaText{
+    background-color: #1476ff;
+    display: inline-block;
+    border-radius: 4px;
+    width: 80%;
+}
+.hintContents{
+    margin: 10px
+}

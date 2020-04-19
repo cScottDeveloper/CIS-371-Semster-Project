@@ -4,7 +4,7 @@
   margin: 10px;
 }
 
-.weapon-list, .weapon-form, .armor-list, .armor-form,.location-list, .location-form{
+.weapon-list, .weapon-form, .armor-list, .armor-form, .location-list, .location-form{
   display: inline-block;
   border-radius: 10px;
   margin: 5px;
@@ -31,6 +31,6 @@
   padding: 10px;
 }
 
-.locationTable, .locationDescription{
+.locationTable, .locationDescription, .armor-list, .weapon-list{
   display: inline-block;
 }

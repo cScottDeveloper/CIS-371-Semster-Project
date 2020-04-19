@@ -9,6 +9,7 @@
       name="description"
       content="Web site created using create-react-app"
     />
+    <link rel="stylesheet" type="text/css" href="bottomStyling.css">
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <!--
       manifest.json provides metadata used when your web app is installed on a
@@ -53,5 +54,53 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
             integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
             crossorigin="anonymous"></script>
+    <div class="hintArea">
+      <div class="hintAreaText">
+        <div class="hintContents">
+    <div id='showHint'></div><br>
+    <input class="hintButton" type="button" onclick="previous()" value="<<">
+    <input class="hintButton" type="button" onclick="next()" value=">>">
+        </div>
+  </div>
+    </div>
+    <script>
+      var i = 0;
+      var x;
+      displayCD(i);
+
+      function displayCD(i) {
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.onreadystatechange = function() {
+          if (this.readyState == 4 && this.status == 200) {
+            myFunction(this, i);
+          }
+        };
+        xmlhttp.open("GET", "hints.xml", true);
+        xmlhttp.send();
+      }
+
+      function myFunction(xml, i) {
+        var xmlDoc = xml.responseXML;
+        x = xmlDoc.getElementsByTagName("HINT");
+        document.getElementById("showHint").innerHTML =
+                "<b>Hint:</b> " +
+                x[i].getElementsByTagName("DESCRIPTION")[0].childNodes[0].nodeValue +
+                "<br> ";
+      }
+
+      function next() {
+        if (i < x.length-1) {
+          i++;
+          displayCD(i);
+        }
+      }
+
+      function previous() {
+        if (i > 0) {
+          i--;
+          displayCD(i);
+        }
+      }
+    </script>
   </body>
 </html>
