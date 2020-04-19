@@ -17,6 +17,7 @@
 .nav-item{
     color: white;
 }
+
 .display-3{
     margin-top: 80px;
 }
@@ -27,7 +28,7 @@ body, html {
 
 .bg {
     /* The image used */
-    background-image: url("/images/background.jpg");
+    background-image: url("/background.jpg");
 
     /* Full height */
     height: 100%;

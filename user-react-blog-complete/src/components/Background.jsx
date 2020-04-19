@@ -5,7 +5,7 @@ import '../index.css';
 const Background = () => {
     return (
         <div className="bg">
-            <img src="../images/background.jpg" alt=""/>
+            <img src="../../public/background.jpg" alt=""/>
         </div>
     );
 }

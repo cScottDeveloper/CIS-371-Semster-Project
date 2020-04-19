@@ -38,7 +38,7 @@ function App () {
                     <div className="welcome-info">
                         <div className="shadow p-4 mb-4 bg-white">
                         <div className="display-3">Dark Souls Guide</div>
-                        <h2>Welcome you can find/edit information about your
+                        <h2 className="head-info">Welcome you can find/edit information about your
                             favorite in game weapons, armor, locations, more!</h2>
                         </div>
                     </div>
@@ -59,6 +59,7 @@ function App () {
                         </div>
                     </nav>
                     <div className="row">
+                        <div className="bg"></div>
                         <div className="col-sm">
                             <div className="dropdown">
                                 <button type="button" className="btn btn-primary dropdown-toggle"
