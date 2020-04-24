@@ -1,5 +1,9 @@
 # CIS-371-Semster-Project
-A innovative website with an API backend and Bottstrap/ CSS used to design the frontend
+A innovative website with an API backend and Bottstrap/ CSS used to design the frontend.
+
+The backend API information is converted from JSON to a useable JavaScript object. The information is stored in a SQLlite database and has three different tables of information (weapons, armor, and locations). Weapons, armor, and locations act as a notetaking part of the application and the locations table contains ALL of the actual locations and their descriptions in the game. DSDB.js is where the information is created and initDB.js is how you initialize the database(this js file calls the initialize method in the DSDB.js file). You can check to see that the information was been put in the database correctly by visiting localhost:3001/weapons, localhost:3001/armor, or localhost:3001/locations. 
+
+I also have another AJAX call that takes place when getting the information for the hints at the bottom of the page. There is a script in the index.html file for the xml file that the contains the raw hints information. 
 
 
 inside of the revUserAPI folder run:
